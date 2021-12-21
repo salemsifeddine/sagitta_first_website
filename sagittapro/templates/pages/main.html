@@ -1,189 +1,133 @@
+{% extends "pages/base.html" %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bely</title>
-    <link rel="stylesheet" href="{% static  'css/main.css' %}">
-    <link rel="stylesheet" href="{% static  'css/bootstrap.min.css' %}">
-    <link rel="icon" sizes="180x180" href="{% static 'images/oero-logo.png' %}">
-    
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"> -->
-</head>
-<body>
-   <main>
-      <section class="section1">
 
-         <header id="header" class="header wrapper home">
-             <div class="header__top">
-                <div class="header__top-logo"><a class="logo" href="/"><img alt="OREO" src="{% static 'images/oero-logo.png' %}"></a></div>
-                <div class="header__top-nav">
-                   <nav role="navigation">
-                      <ul class="desktop-menu only-desktop">
-                         <li><a class="active js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
-                         <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
-                         <li><a class="js-event-cta" href="/recettes" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">Recettes</a></li>
-                         <li><a class="js-event-cta" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
-                      </ul>
-                     
-                     
-                   </nav>
-                </div>
-                <div class="header__top-social only-desktop">
-                 <ul class="social-icons">
-                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    
-                    
-                 </ul>
-                </div>
+
+{% block content %}
+  
+<div class="wrapper home" id="pageSelector">
+            
+    <div class="row">
+       <div class="col-lg-12 hero-text mobile-hero-text">
+          <h1 class="hovercursor" style="text-align: center;">Découvrez le monde merveilleux d’Oreo</h1>
+       </div>
+    </div>
+    <div class="row js-oreo-product">
+       <div class="col-lg-12">
+          <div class="grid" style="position: relative; height: 514.117px;">
+             <div class="grid-sizer"></div>
+             <div class="grid-gutter"></div>
+             <div class="grid-item grid-item--default   grid-item--blueNavy hovercursor" style="position: absolute; left: 0%; top: 0px;">
+                <div class="grid-order">8</div>
+                <img alt="oreo product" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image4.png">
              </div>
-             <div class="header__banner">
-                <div class="top-banner-container">
-                   <!-- <div class="swiper-wrapper">
-                     
-                      <div class="swiper-slide"><img  src="{% static 'images/oreofr.png' %}" alt="watermark" width="421" height="421"></div>
-                   </div> -->
-                   <div class="splited-bely">
-                     
-                      <div class="left-bely">
-                         <img src="{% static 'images/leftoreo.png' %}" alt="">
-                      </div>
-                      <div class="right-bely">
-                         <img src="{% static 'images/rightoreo.png' %}" alt="">
-                      </div>
-                   </div>
-                   <!--<div class="swiper-button-prev"></div>-->
-                   <!--<div class="swiper-button-next"></div>-->
-                </div>
+             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
+                <div class="grid-order">9</div>
+                <a href="/produits#oreo-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-crispy-en-thin-vanille-192g">
+                   <img style="animation-delay: .5s;" alt="oreo product" class="responsive animateproduct" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87924.png">
+                </a>
              </div>
-             <div class="header__arrow-down"><a href="#home"><img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62"></a></div>
-          </header>
-          <div class="wrapper home" id="pageSelector">
-            
-            <div class="row">
-               <div class="col-lg-12 hero-text mobile-hero-text">
-                  <h1 style="text-align: center;">Nos délicieux produits</h1>
-               </div>
-            </div>
-            <div class="row js-oreo-product">
-               <div class="col-lg-12">
-                  <div class="grid" style="position: relative; height: 514.117px;">
-                     <div class="grid-sizer"></div>
-                     <div class="grid-gutter"></div>
-                     <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 0%; top: 0px;">
-                        <div class="grid-order">8</div>
-                        <img alt="oreo product" class="responsive" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image4.png">
-                     </div>
-                     <div class="grid-item grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
-                        <div class="grid-order">9</div>
-                        <a href="/produits#oreo-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-crispy-en-thin-vanille-192g">
-                           <img alt="oreo product" class="responsive" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87924.png">
-                        </a>
-                     </div>
-                     <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
-                        <div class="grid-order">10</div>
-                        <a href="/produits#oreo-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-double-creme-157g">
-                           <img alt="oreo product" class="responsive" src="https://images.sweetauthoring.com/product/82093.png">
-                        </a>
-                     </div>
-                     <div class="grid-item grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
-                        <div class="grid-order">11</div>
-                        <img alt="oreo biscuit" class="responsive" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/oreo-biscuit.png">
-                     </div>
-                     <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
-                        <div class="grid-order">12</div>
-                        <a href="/produits#oreo-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-original-format-familial-308g">
-                           <img alt="oreo product" class="responsive" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87905.png">
-                        </a>
-                     </div>
-                     <div class="grid-item grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
-                        <div class="grid-order">13</div>
-                        <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Oreo Products - HP">
-                           <span >Découvrez tous<br> nos produits</span>
-                           <img alt="arrowlong" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/common/arrowlong.png">
-                        </a>
-                     </div>
-                     <div class="grid-item grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
-                        <div class="grid-order">14</div>
-                        <span >Découvrez toutes les saveurs OREO</span>
-                     </div>
-                     
-                  
-                     <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
-                        <div class="grid-order">15</div>
-                        <img alt="oreo product" class="responsive" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image-oreo.png">
-                     </div>
-                  </div>
-               </div>
-            </div>
-            
-            
-         </div>
-         
+             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
+                <div class="grid-order">10</div>
+                <a href="/produits#oreo-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-double-creme-157g">
+                   <img alt="oreo product" class="responsive animateproduct " src="https://images.sweetauthoring.com/product/82093.png">
+                </a>
+             </div>
+             <div class="grid-item hovercursor hovercursor grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
+                <div class="grid-order">11</div>
+                <img alt="oreo biscuit" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/oreo-biscuit.png">
+             </div>
+             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
+                <div class="grid-order">12</div>
+                <a href="/produits#oreo-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-original-format-familial-308g">
+                   <img alt="oreo product" class="responsive animateproduct" style="animation-delay: 3s;" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87905.png">
+                </a>
+             </div>
+             <div class="grid-item hovercursor grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
+                <div class="grid-order">13</div>
+                <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Oreo Products - HP">
+                   <span >Découvrez tous<br> nos produits</span>
+                   <img alt="arrowlong" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/common/arrowlong.png">
+                </a>
+             </div>
+             <div class="grid-item hovercursor grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
+                <div class="grid-order">14</div>
+                <span >Découvrez toutes les saveurs OREO</span>
+             </div>
+             
           
- 
-     </section>
-     <!-- <h2>Apollo</h2>
-        <div class="grid">
-          <figure class="effect-apollo">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/18.jpg" alt="img18"/>
-            <figcaption>
-              <h2>Strong <span>Apollo</span></h2>
-              <p>Apollo's last game of pool was so strange.</p>
-              <a href="#">View more</a>
-            </figcaption>     
-          </figure>
-          <figure class="effect-apollo" style="background-color: #e27098;">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/22.jpg" alt="img22"/>
-            <figcaption>
-              <h2>Strong <span>Apollo</span></h2>
-              <p>Apollo's last game of pool was so strange.</p>
-              <a href="#">View more</a>
-            </figcaption>     
-          </figure>
-        </div> -->
- 
- 
- 
-   </main>
-   
-   <div class="footer-basic">
-      <footer>
-          <div class="social">
-             <a href="#"><i  class="fa fa-instagram"></i></a>
-             <a href="#"><i class="fa fa-snapchat"></i></a>
-             <a href="#"><i class="fa fa-twitter"></i></a>
-             <a href="#"><i class="fa fa-facebook"></i></a>
-            </div>
-          <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Home</a></li>
-              <li class="list-inline-item"><a href="#">Services</a></li>
-              <li class="list-inline-item"><a href="#">About</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          </ul>
-          <p class="copyright">Company Name © 2021</p>
-      </footer>
-  </div>
-  <div class="preloader">
+             <div class="grid-item hovercursor grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
+                <div class="grid-order">15</div>
+                <img alt="oreo product" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image-oreo.png">
+             </div>
+          </div>
+       </div>
+    </div>
+    
+    
+ </div>
 
-   <div class="imgloader">
-      <img src="{% static 'images/oreofr.png' %}" alt="">
-   </div>
+ <!--  -->
+ <div class="wrapper home" id="pageSelector">
+    
+    <div class="row">
+       <div class="col-lg-12 hero-text mobile-hero-text">
+          <h1 class="hovercursor" style="text-align: center;">Découvrez le monde merveilleux d’Oreo</h1>
+         
+       </div>
+    </div>
+    <div class="row js-oreo-product">
+       <div class="col-lg-12">
+          <div class="grid" style="position: relative; height: 514.117px;">
+             <div class="grid-sizer"></div>
+             <div class="grid-gutter"></div>
+             <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 0%; top: 0px;">
+                <div class="grid-order">8</div>
+                <img alt="oreo product" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image4.png">
+             </div>
+             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
+                <div class="grid-order">9</div>
+                <a href="/produits#oreo-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-crispy-en-thin-vanille-192g">
+                   <img alt="oreo product" class="responsive hovercursor" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87924.png">
+                </a>
+             </div>
+             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
+                <div class="grid-order">10</div>
+                <a href="/produits#oreo-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-double-creme-157g">
+                   <img alt="oreo product" class="responsive hovercursor" src="https://images.sweetauthoring.com/product/82093.png">
+                </a>
+             </div>
+             <div class="grid-item grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
+                <div class="grid-order">11</div>
+                <img alt="oreo biscuit" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/oreo-biscuit.png">
+             </div>
+             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
+                <div class="grid-order">12</div>
+                <a href="/produits#oreo-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-original-format-familial-308g">
+                   <img alt="oreo product" class="responsive hovercursor" src="http://proddb.kraft-staging.net/prod_db/proddbimg/87905.png">
+                </a>
+             </div>
+             <div class="grid-item grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
+                <div class="grid-order">13</div>
+                <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Oreo Products - HP">
+                   <span >Découvrez tous<br> nos produits</span>
+                   <img  alt="arrowlong" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/common/arrowlong.png">
+                </a>
+             </div>
+             <div class="grid-item grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
+                <div class="grid-order">14</div>
+                <span >Découvrez toutes les saveurs OREO</span>
+             </div>
+             
+          
+             <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
+                <div class="grid-order">15</div>
+                <img alt="oreo product" class="responsive hovercursor" src="https://fr.oreo.eu/~/media/oreo/fr2018/images/page/home/image-oreo.png">
+             </div>
+          </div>
+       </div>
+    </div>
+    
+    
+ </div>  
 
-  </div>
-  <script >
-     window.addEventListener("load",function(){
-        setTimeout(() => {
-         document.querySelector(".preloader").remove()
-        }, 1000);
-     })
-  </script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'js/jquery.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-</body>
-</html>
+{% endblock content %}
