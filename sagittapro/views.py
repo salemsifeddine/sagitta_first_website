@@ -15,3 +15,7 @@ def products(request):
 def productDet(request):
     context={}
     return render(request,"pages/productDet.html",context)
+
+def faq(request):
+    context={}
+    return render(request,"pages/faq.html",context)
