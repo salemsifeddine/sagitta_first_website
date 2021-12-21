@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)s(v12w=p#&*r)@380i5ma*rl^=a$d%jo%vh6tz)iv$a1-(0ca
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "sagittapro"
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'sagitta.wsgi.application'
 
@@ -113,8 +116,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+import os
 # Static files (CSS, JavaScript, Images)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
