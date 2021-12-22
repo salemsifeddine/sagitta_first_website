@@ -19,3 +19,7 @@ def productDet(request):
 def faq(request):
     context={}
     return render(request,"pages/faq.html",context)
+
+def panier(request):
+    context={}
+    return render(request,"pages/panier.html",context)

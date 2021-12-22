@@ -1,6 +1,6 @@
 .faqdivcont{
     width: 100%;
-    border: 1px solid black;
+    
     padding-top: 30px;
 }
 .faqs-container {
@@ -28,7 +28,7 @@
 .faq.active::after, .faq.active::before {
 	color: #2ecc71;
 	content: '\f075';
-	font-family: 'Font Awesome 5 Free';
+
 	font-size: 7rem;
 	position: absolute;
 	opacity: 0.2;
@@ -121,7 +121,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Muli';
+
 	position: relative;
 	height: 169px;	
 	width: 370px;
@@ -170,7 +170,7 @@
 .social-panel h4 {
 	margin: 20px 0;
 	color: #97A5CE;	
-	font-family: 'Muli';	
+	
 	font-size: 14px;	
 	line-height: 18px;
 	text-transform: uppercase;
@@ -219,6 +219,7 @@
 	bottom: 20px;
 	right: 20px;
 	z-index: 999;
+	font-family: "Pacifico",cursive,sans-serif;
 }
 
 .floating-btn:hover {
@@ -234,7 +235,7 @@
 	background-color: #001F61;
 	border-radius: 10px 10px 0 0;
 	color: #fff;
-	font-family: 'Muli';
+
 	padding: 7px 15px;
 	position: fixed;
 	bottom: 0;
