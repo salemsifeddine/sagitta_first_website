@@ -4,13 +4,67 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/productDet.css' %}">
+<link rel="stylesheet" href="{% static 'css/panier.css' %}">
   
 {% endblock head %}
 
 {% block content %}
+
+<section class="product" style="width: 60%;padding-top: 50px;">
+    <div class="product__photo">
+      <div class="photo-container">
+        <div class="photo-main">
+          <div class="controls">
+            <i class="material-icons">share</i>
+            <i class="material-icons">favorite_border</i>
+          </div>
+          <img src="{% static 'images/87924.png' %}" alt="green apple slice">
+        </div>
+        <div class="photo-album">
+          <ul>
+            <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+            <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+            <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+            <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="product__info">
+      <div class="title">
+        <h1>Delicious Apples</h1>
+        <span>COD: 45999</span>
+      </div>
+      <div class="price">
+        R$ <span>7.93</span>
+      </div>
+      <div class="variant">
+        <h3>SELECT A COLOR</h3>
+        <ul>
+          <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+          <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+          <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+          <li><img src="{% static 'images/87924.png' %}" alt="green apple slice"></li>
+        </ul>
+      </div>
+      <div class="description">
+        <h3>BENEFITS</h3>
+        <ul>
+          <li>Apples are nutricious</li>
+          <li>Apples may be good for weight loss</li>
+          <li>Apples may be good for bone health</li>
+          <li>They're linked to a lowest risk of diabetes</li>
+        </ul>
+      </div>
+      <button class="buy--btn addcart">ADD TO CART</button>
+      <button class="buy--btn moredet">MORE DETAILS</button>
+    </div>
+  </section>
   
-<div class="sweetControl grid-item product-description product-description-purple landscape bâtonnet-oreo-à-emporter" style="position: relative;  margin-top:90px;">
-    <div class="DivContainer SharedPage product-description--pointer product-description--pointer-landscape-purple" style="left: 47.2132%;"></div>
+<div class="sweetControl grid-item product-description product-description-purple 
+        landscape bâtonnet-oreo-à-emporter moredetDiv"
+    style="position: relative;  margin-top:90px;width: 85%;margin: auto;;display:none">
+    <div class="DivContainer SharedPage product-description--pointer product-description--pointer-landscape-purple" style="left: 25.2132%"></div>
     <div class="ContentItem BaseContent product-description--block">
     <div id="phcontent_0_IoPUserControl_ctl03_contentdiv" class="contentBody">
     <div class="grid-order">26</div>
@@ -393,5 +447,6 @@
     </div>
     </div>
      </div>
+     <script src="{% static 'js/productDet.js' %}"></script>
 
 {% endblock content %}
