@@ -1,17 +1,18 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
 class Product(models.Model):
-    owner=models.ForeignKey(User,on_delete=models.CASCADE)
-    colors=models.ManyToManyField(Color)
-    sizes=models.ManyToManyField(Size)
+    owner=models.ForeignKey(User,on_delete=models.CASCADE,null=True)
+    # colors=models.ManyToManyField(Color)
+    # sizes=models.ManyToManyField(Size)
     name=models.CharField(max_length=50)
     description=models.TextField()
     old_price=models.FloatField()
     new_price= models.FloatField()
-    catigory=models.ForeignKey(CategoryProduct, on_delete=models.CASCADE, default=1)
-    rate=models.ForeignKey(Rate, on_delete=models.CASCADE, default=0)
+    # catigory=models.ForeignKey(CategoryProduct, on_delete=models.CASCADE, default=1)
+    # rate=models.ForeignKey(Rate, on_delete=models.CASCADE, default=0)
     image= models.ImageField( default="", upload_to="products")
     # thumbnail = models.ManyToManyField(ProductThumbnail)
     brand_name=models.CharField(max_length=100)
