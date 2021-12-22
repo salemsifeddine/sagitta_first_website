@@ -55,7 +55,9 @@ class ProductDetailView(generic.DetailView):
 
 
 def faq(request):
-    context={}
+    context={
+        "faqs":FaQ.objects.all()
+    }
     return render(request,"pages/faq.html",context)
 
 def panier(request):

@@ -173,7 +173,7 @@ header, hgroup, main, nav, section {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     bottom: -70px;
-    z-index: 99;
+    
 }
 .header__arrow-down img {
     width: 62px;
