@@ -587,13 +587,11 @@ figure.effect-apollo {
     background-color: #6bc7c0;
 }
 .home .grid-text {
-    font-size: 28px;
+    font-size: 24px;
     padding: 20px 0;
     font-weight:bolder;
 }
-.home .grid-text {
-    font-size: 28px;
-}
+
 .grid-text {
     font-size: 20px;
     font-family: OreoSansBold;
