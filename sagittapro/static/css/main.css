@@ -81,9 +81,14 @@ a {
 
 
 
-.header__top-logo img {
+/* .header__top-logo img {
     width: 250px;
     height: 100px;
+} */
+
+.header__top-logo img{
+  width: 100px;
+  height: 90px;
 }
 
 img {
@@ -672,12 +677,17 @@ h1{
   letter-spacing: 1.5px;
 }
 
-.logo-footer{
+/* .logo-footer{
   width: 200px;
   height:80px;
   margin: auto;
   
   
+} */
+.logo-footer {
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
 .logo-footer img{
  
