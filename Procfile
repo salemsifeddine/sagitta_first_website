@@ -1,0 +1,1 @@
+web: gunicorn sagitta.wsgi --log-file -
