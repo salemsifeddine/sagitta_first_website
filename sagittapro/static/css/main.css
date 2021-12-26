@@ -254,10 +254,10 @@ header, hgroup, main, nav, section {
 
   }
   .right-bely{
-      right:1px;
+      right:2px;
   }
   .left-bely{
-      left:0
+      left:1
   }
   .left-bely img,.right-bely img{
     width: 100%;
