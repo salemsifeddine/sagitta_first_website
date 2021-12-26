@@ -36,9 +36,10 @@ main{
 
 
 .header.cookie, .header.home, .header.oreo-terms-of-use, .header.terms-of-use {
-    background: -webkit-radial-gradient(#41b6e6, #0283e6);
+    /* background: -webkit-radial-gradient(#41b6e6, #0283e6);
     background: -o-radial-gradient(#41b6e6, #0283e6);
-    background: radial-gradient(#41b6e6, #0283e6);
+    background: radial-gradient(#41b6e6, #0283e6); */
+    background:#0058c9;
 }
 
 .header {
@@ -80,15 +81,18 @@ a {
 
 
 
-
+.header__top-logo{
+  position: relative;
+  bottom: -10px;
+}
 /* .header__top-logo img {
     width: 250px;
     height: 100px;
 } */
 
 .header__top-logo img{
-  width: 100px;
-  height: 90px;
+  width: 120px;
+height: 100px;
 }
 
 img {
@@ -110,7 +114,7 @@ header, hgroup, main, nav, section {
     display: -webkit-flex !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    margin-bottom: 25px;
+    margin-top: 25px;
 }
 .only-desktop {
     display: block;
@@ -123,7 +127,7 @@ header, hgroup, main, nav, section {
     border-bottom: 2px solid #fff;
 }
 .desktop-menu li a {
-    color: #fff;
+    color: #333;
    
     letter-spacing: 0;
     font-size: 30px;
@@ -156,7 +160,7 @@ header, hgroup, main, nav, section {
 }
 .desktop-menu li a:hover {
     color: #1064ad;
-    border-bottom: 2px solid #1064ad;
+    border-top: 2px solid #1064ad;
 }
 
 .swiper-slide {
@@ -249,16 +253,17 @@ header, hgroup, main, nav, section {
   }
 
   .left-bely,.right-bely{
-    width: 50%;
+    /* width: 50%; */
+    width: 130px;
       height: 100%;
       position: absolute;
 
   }
   .right-bely{
-      right:2px;
+      right:10px;
   }
   .left-bely{
-      left:1
+      left:9
   }
   .left-bely img,.right-bely img{
     width: 100%;
