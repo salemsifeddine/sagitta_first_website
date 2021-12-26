@@ -168,7 +168,7 @@ header, hgroup, main, nav, section {
 
 .swiper-slide {
     text-align: center;
-    margin-top: -85px;
+    /* margin-top: -85px; */
 }
 
 .header__arrow-down {

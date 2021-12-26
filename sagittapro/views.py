@@ -19,7 +19,7 @@ class ProductDetailView(generic.DetailView):
     
     
     model=Product
-    template_name="pages/productDet.html"
+    template_name="pages/test.html"
     # def get_context_data(self,**kwargs):
 
       
