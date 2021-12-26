@@ -99,6 +99,7 @@
 
 .ttsimplmnt h3{
     font-size:40px;
+    color: #333;
 }
 
 .R{
@@ -115,3 +116,71 @@
     }
     
 }
+
+
+/*  */
+.twist-container .background-overlay {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.white-fill{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+.white-fill img{
+    width: 100%;
+   
+}
+
+.cookie-small-4 {
+    bottom: 100px;
+    right: 50px;
+}
+.cookie-small-5 {
+    bottom: 100px;
+    left: 50px;
+}
+
+.cookie-small {
+    position: absolute;
+    animation: cookies 6s linear infinite;
+}
+figure {
+    margin: 0;
+}
+
+
+@keyframes cookies {
+    0% {
+     transform:rotate(0deg)
+    }
+    100% {
+     transform:rotate(360deg)
+    }
+   }
+@keyframes cookiesmove {
+    0% {
+     transform:translate(10px,10px)
+    }
+    20% {
+     transform:translate(30px,30px)
+    }
+    40% {
+     transform:translate(50px,50px)
+    }
+    60% {
+     transform:translate(30px,30px)
+    }
+    80% {
+     transform:translate(10px,10px)
+    }
+    100% {
+     transform:translate(0,0)
+    }
+   }
