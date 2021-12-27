@@ -138,3 +138,64 @@
 }
 
 
+
+
+/* chevrons */
+
+.fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    font-size: 50px;
+    color: blanchedalmond;
+    animation: chevronleft .5s linear infinite alternate; 
+    }
+.fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    font-size: 50px;
+    color: blanchedalmond;
+    animation: chevronright .5s linear infinite alternate; 
+    }
+
+
+@keyframes chevronleft {
+    0%{
+        
+        left: 60px;
+
+    }
+    25%{
+        left: 30px;
+    }
+    50%{
+        left: 50px;
+    }
+    75%{
+        left: 45px;
+    }
+    100%{
+        left: 40px;
+    }
+}
+
+@keyframes chevronright {
+    0%{
+        
+        right: 60px;
+
+    }
+    25%{
+        right: 30px;
+    }
+    50%{
+        right: 50px;
+    }
+    75%{
+        right: 45px;
+    }
+    100%{
+        right: 40px;
+    }
+}

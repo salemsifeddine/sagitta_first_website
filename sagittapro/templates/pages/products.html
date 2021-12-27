@@ -1,11 +1,105 @@
 {% extends "pages/base.html" %}
 {% load static %}
 
+
+
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/productDet.css' %}">
 <link rel="stylesheet" href="{% static 'css/panier.css' %}">
   <link rel="stylesheet" href="{% static 'css/products.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ecom.css' %}">
+
 {% endblock head %}
+
+
+{% block header %}
+<header id="header" class="header wrapper home" style="margin: 0;padding: 0;">
+  <div class="header__top" style="padding:10px ; background: #FFF;height: 80px;">
+     <div class="header__top-logo">
+        <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
+       </div>
+     <div class="header__top-nav">
+        <nav role="navigation">
+           <ul class="desktop-menu only-desktop">
+              <li><a class="active js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
+              <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
+              <li><a class="js-event-cta" href="/recettes" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">Recettes</a></li>
+              <li><a class="js-event-cta" href="/recettes" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">About</a></li>
+              <li><a class="js-event-cta" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
+           </ul>
+          
+          
+        </nav>
+     </div>
+     <div class="header__top-social only-desktop">
+      <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+         
+         
+      </ul>
+     </div>
+  </div>
+  <div class="header__banner">
+     <div class="top-banner-container">
+      <i class="fas fa-chevron-left"></i>
+      <i class="fas fa-chevron-right"></i>
+
+<div id="citation" >
+  <p style="text-align: center;">Produits!</p>
+  </div>
+    
+  
+      <div class="slider-container">
+        
+        <div class="slide">
+          <h2 id="txt">Hiba Sables</h2>
+        
+          <img src="{% static 'images/product5.png' %}" alt="" />
+          <!-- <a href="#" class="btn">Buy Now</a> -->
+        </div>
+        <div class="slide">
+          <h2>Bely noir</h2>
+         
+          <img src="{% static 'images/product3.png' %}" alt="" style="max-width: 300px;margin-top:20px" />
+          <!-- <a href="#" class="btn">Buy Now</a> -->
+        </div>
+        <div class="slide">
+          <h2>Bely noir</h2>
+         
+          <img src="{% static 'images/product3.png' %}" alt="" style="max-width: 300px;margin-top:20px" />
+          <!-- <a href="#" class="btn">Buy Now</a> -->
+        </div>
+        <div class="slide">
+            <h2>Wippy</h2>
+           
+            <img src="{% static 'images/product2.png' %}" alt="" style="max-width: 300px;margin-top:20px" />
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+          </div>
+          <div class="slide">
+            <h2>Mini Hiba sables </h2>
+            
+            <img src="{% static 'images/product6.png' %}" alt="" style="max-width: 300px;margin-top:20px" />
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+          </div>
+          <div class="slide">
+            <h2>Mini Wippy</h2>
+            
+            <img src="{% static 'images/product1.png' %}" alt="" style="max-width: 300px;margin-top:20px" />
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+          </div>
+      </div>
+     </div>
+  </div>
+  <div class="header__arrow-down">
+    <a href="#home">
+       <img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62">
+    </a>
+    </div>
+
+ </header>
+{% endblock header %}
+
 {% block content %}
 
   <div class="wrapper products" id="pageSelector">
@@ -537,6 +631,61 @@ min-height: 100vh;position: fixed;top: 0;display:none;background-color: #faebd79
 
 </div>
 <script src="{% static 'js/products.js' %}"></script>
+<script src="{% static 'js/ecom.js' %}"></script>
+<!-- <script src="{% static 'js/TweenMax.min.js' %}"></script>
+
+<script src="{% static 'js/splittext.js' %}"></script>
+<script>
+  var mySplitText = new SplitText("#citation");
+
+  function animation11() {
+  TweenMax.staggerFrom(mySplitText.chars, 0.5, {opacity: 0, y:-20, ease: Back.easeInOut}, 0.07);
+  }
+
+  animation11()
+</script> -->
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomEase3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrambleTextPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomBounce3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CustomWiggle3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/EasePack3.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Flip.min.js"></script>
+<script>
+  
+
+
+
+const splitTxt = new SplitText("#txt").chars;
+
+const tl = gsap.timeline({defaults:{duration:1.5, stagger:{amount:0.1, ease:'sine.in'}}})
+  .from(splitTxt, {
+    duration:0.6,
+    opacity:0,
+    ease: "power1.inOut"    
+  }, 0)
+  .from(splitTxt, {
+    y: -350,
+    ease: "myBounce"
+  }, 0)
+  .to(splitTxt, {
+    scaleX: 1.8,
+    scaleY: 0.7,
+    rotate: (i)=>15-30*Math.random(),
+    ease: "myBounce-squash",
+    transformOrigin: "50% 100%"
+  }, 0)
+
+window.onclick=()=>tl.play(0)
+
+
+​
+
+</script> -->
 {% endblock content %}
 <!-- <div class="wrapper products" id="pageSelector"> 
   <div class="overlay" style="display: none;"><img src="/~/media/oreo/fr2018/images/common/ajax-loader.gif" alt="Loading"></div>

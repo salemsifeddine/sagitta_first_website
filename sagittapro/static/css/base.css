@@ -431,11 +431,11 @@ a:focus {
 }
 
 @media screen and (min-width: 53em) {
-	*,
+	/* *,
 	*::after,
 	*::before {
 		cursor: none !important;
-	}
+	} */
 	.message {
 		display: none;
 	}
@@ -575,9 +575,9 @@ a:focus {
 }
 
 @media screen and (max-width: 53em) {
-	.cursor {
+	/* .cursor {
 		visibility: hidden;
-	}
+	} */
 	.slide__title-inner {
 		transform: none !important;
 	}

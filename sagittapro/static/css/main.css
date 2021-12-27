@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family:"Pacifico",cursive,sans-serif;
-    cursor: none !important;
+    /* cursor: none !important; */
 }
 body {
 
@@ -34,13 +34,23 @@ main{
     
 }
 
-
-.header.cookie, .header.home, .header.oreo-terms-of-use, .header.terms-of-use {
-    /* background: -webkit-radial-gradient(#41b6e6, #0283e6);
-    background: -o-radial-gradient(#41b6e6, #0283e6);
-    background: radial-gradient(#41b6e6, #0283e6); */
-    background:#0058c9;
+#citation {
+  font-family: arial, sans-serif;
+  font-size: 5em;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: tranparent;
+  color: transparent;
+  cursor: pointer;
+  letter-spacing: -3px;
+  height:10px;
 }
+
+/* .header.cookie, .header.home, .header.oreo-terms-of-use, .header.terms-of-use {
+    background: -webkit-radial-gradient(#41b6e6, #0283e6);
+    background: -o-radial-gradient(#41b6e6, #0283e6);
+    background: radial-gradient(#41b6e6, #0283e6); 
+     
+/* }  */
 
 .header {
     height: 600px;
@@ -181,7 +191,7 @@ header, hgroup, main, nav, section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    bottom: -70px;
+    bottom: -65px;
     z-index:2;
     
 }

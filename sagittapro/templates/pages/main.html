@@ -2,6 +2,106 @@
 {% load static %}
 
 
+{% block header %}
+<header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#0058c9;">
+   <div class="header__top" style="padding:10px ; background: #FFF;height: 80px;">
+      <div class="header__top-logo">
+         <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
+        </div>
+      <div class="header__top-nav">
+         <nav role="navigation">
+            <ul class="desktop-menu only-desktop">
+               <li><a class="active js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
+               <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
+               <li><a class="js-event-cta" href="/recettes" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">Recettes</a></li>
+               <li><a class="js-event-cta" href="/recettes" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">About</a></li>
+               <li><a class="js-event-cta" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
+            </ul>
+           
+           
+         </nav>
+      </div>
+      <div class="header__top-social only-desktop">
+       <ul class="social-icons">
+           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          
+          
+       </ul>
+      </div>
+   </div>
+   <div class="header__banner">
+      <div class="top-banner-container">
+    
+         <!-- <div class="swiper-wrapper">
+           
+            <div class="swiper-slide"><img  src="{% static 'images/oreofr.png' %}" alt="watermark" width="421" height="421"></div>
+         </div> -->
+         <div class="splited-bely">
+           
+            <!-- <div class="left-bely">
+               <img src="{% static 'images/leftoreo.png' %}" alt="">
+            </div>
+            <div class="right-bely" style="right:22px">
+               <img src="{% static 'images/rightoreo.png' %}" alt="">
+            </div> -->
+            <div class="left-bely">
+              <img src="{% static 'images/bely 22222.png' %}" alt="">
+           </div>
+           <div class="right-bely">
+              <img src="{% static 'images/bely1.png' %}" alt="">
+           </div>
+         </div>
+        
+         <!--<div class="swiper-button-prev"></div>-->
+         <!--<div class="swiper-button-next"></div>-->
+      </div>
+   </div>
+   <div class="header__arrow-down">
+     <a href="#home">
+        <img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62">
+     </a>
+     </div>
+   <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
+   data-element="main" style="border-style: none;">
+     <img class="pagebuilder-mobile-hidden" src="{% static 'images/face2.png' %}" alt="" title="" 
+   data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
+  </figure>
+  <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
+   data-element="main" style="border-style: none;bottom: 350px;
+   right: 96px;">
+     <img class="pagebuilder-mobile-hidden" src="{% static 'images/face2.png' %}" alt="" title="" 
+   data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
+  </figure>
+  <figure class="cookie-small-5 cookie-small" data-content-type="image" data-appearance="full-width" 
+   data-element="main" style="border-style: none;">
+     <img class="pagebuilder-mobile-hidden" src="{% static 'images/face.png' %}" alt="" title="" 
+   data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
+  </figure>
+  <script>
+     setInterval(() => {
+        document.querySelectorAll(".cookie-small")[0].style.animation="cookiesmove 6s linear infinite";
+        setTimeout(() => {
+        document.querySelectorAll(".cookie-small")[0].style.animation="cookies 6s linear infinite"
+     }, 6000);
+     // 
+     document.querySelectorAll(".cookie-small")[1].style.animation="cookiesmove 6s linear infinite";
+        setTimeout(() => {
+        document.querySelectorAll(".cookie-small")[1].style.animation="cookies 6s linear infinite"
+     }, 6000);
+     // 
+     document.querySelectorAll(".cookie-small")[2].style.animation="cookiesmove 6s linear infinite";
+        setTimeout(() => {
+        document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite"
+     }, 6000);
+     }, 6000);
+  </script>
+   <div class="white-fill">
+     <img src="{% static 'images/twist-fill.png' %}" alt="">
+  </div>
+  </header>
+{% endblock header %}
+
 {% block content %}
   
 <div class="wrapper home" id="pageSelector">

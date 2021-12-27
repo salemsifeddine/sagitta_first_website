@@ -2,8 +2,8 @@
 .preloader-cont{
 	width: 100%;
 	height: 100%;
-	border: 1px solid black;
-    padding-top: 10vh;
+
+  padding-top: 10vh;
 }
 
 .imgload{
@@ -131,11 +131,12 @@
     width: 100%;
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom:-70px;
+    height:220px;
 }
 .white-fill img{
     width: 100%;
-   
+    filter: none;
 }
 
 .cookie-small-4 {
