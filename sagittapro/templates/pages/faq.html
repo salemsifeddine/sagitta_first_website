@@ -4,6 +4,105 @@
 
 {% block head %}
   <link rel="stylesheet" href="{% static 'css/faq.css' %}">
+  <style>
+	  :root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+  
+  --clr: #b7c9e5;
+}
+.inline{
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 9em 20em;
+  transition: transform 3s;
+  // background: pink;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: var(--clr);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+}
+
+.card__title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  opacity: .7;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+
+
+.card__back {
+  transform: rotateY(.5turn);
+  color: var(--clr);
+  background: #333;
+}
+
+
+
+  </style>
 {% endblock head %}
 
 {% block content %}
@@ -12,24 +111,87 @@
 <div class="faqdivcont">
     <h1>Frequently Asked Questions</h1>
 
-<div class="faqs-container">
+<div class="faqs-container" style="max-width: 100%  !important;padding: 30px 0px;">
 
-	{% for faq in faqs %}
+	<!-- {% for faq in faqs %}
 	<div class="faq">
 		<h3 class="faq-title">
 			{{faq.question}}
 		</h3>
 		<p class="faq-text">
 			{{faq.answer}}
-            <!-- <span style="font-size: 30px;">&#8964;</span> -->
+          
 		</p>
 		<button class="faq-toggle">
 			<i class="fas fa-chevron-up"></i>
 			<i class="fas fa-chevron-down"></i>
 		</button>
 	</div>
-	{% endfor %}
+	{% endfor %} -->
+	<div class="inline">
+		<div class="card">
+			<div class="card__content">
+			  
+			  <div class="card__front">
+				<h3 class="card__title">The Fair</h3>
+				<p class="card__subtitle">Time for some fun</p>
+			  </div> 
+			  
+			  <div class="card__back">
+				<p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+			  </div>
+			  
+			</div>
+		  </div>
 	
+		  <div class="card">
+			<div class="card__content">
+			  
+			  <div class="card__front">
+				<h3 class="card__title">The Fair</h3>
+				<p class="card__subtitle">Time for some fun</p>
+			  </div> 
+			  
+			  <div class="card__back">
+				<p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+			  </div>
+			  
+			</div>
+		  </div>
+	</div>
+	<!-- inline 2 -->
+	<div class="inline">
+		<div class="card">
+			<div class="card__content">
+			  
+			  <div class="card__front">
+				<h3 class="card__title">The Fair</h3>
+				<p class="card__subtitle">Time for some fun</p>
+			  </div> 
+			  
+			  <div class="card__back">
+				<p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+			  </div>
+			  
+			</div>
+		  </div>
+	
+		  <div class="card">
+			<div class="card__content">
+			  
+			  <div class="card__front">
+				<h3 class="card__title">The Fair</h3>
+				<p class="card__subtitle">Time for some fun</p>
+			  </div> 
+			  
+			  <div class="card__back">
+				<p class="card__body">This would be some longer text that gives a description of the things from the other side I guess</p>
+			  </div>
+			  
+			</div>
+		  </div>
+	</div>
+	 
 	
 	
 	
