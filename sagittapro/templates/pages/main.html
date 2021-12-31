@@ -2,14 +2,189 @@
 {% load static %}
 
 
+
+{% block head %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+  <style class="INLINE_PEN_STYLESHEET_ID">
+   
+
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo{
+    padding: 15px;
+    color: #fff;
+}
+.navbar-mainbg{
+    background-color: #5161ce;
+    padding: 0px;
+}
+#navbarSupportedContent{
+    overflow: hidden;
+    position: relative;
+}
+#navbarSupportedContent ul{
+    padding: 0px;
+    margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+    margin-right: 10px;
+}
+#navbarSupportedContent li {
+    list-style-type: none;
+    float: left;
+}
+#navbarSupportedContent ul li a{
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+    color: #5161ce;
+    background-color: transparent;
+    transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+    content: "\f105";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+    transform: rotate(90deg);
+}
+.hori-selector{
+    display:inline-block;
+    position:absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    bottom: 10px;
+}
+.hori-selector .right{
+    right: -25px;
+}
+.hori-selector .left{
+    left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5161ce;
+}
+.hori-selector .right:before{
+    bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+    bottom: 0;
+    left: -25px;
+}
+
+.navbar{
+   overflow:hidden
+}
+
+
+@media(min-width: 992px){
+    .navbar-expand-custom {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+}
+
+
+@media (max-width: 991px){
+    #navbarSupportedContent ul li a{
+        padding: 12px 30px;
+    }
+    .hori-selector{
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    .hori-selector .left,
+    .hori-selector .right{
+        right: 10px;
+    }
+    .hori-selector .left{
+        top: -25px;
+        left: auto;
+    }
+    .hori-selector .right{
+        bottom: -25px;
+    }
+    .hori-selector .left:before{
+        left: -25px;
+        top: -25px;
+    }
+    .hori-selector .right:before{
+        bottom: -25px;
+        left: -25px;
+    }
+}
+  </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d0f3648046d2aaca07bd0037b9e061a26c74a8a999b75672ad6a638cca641472.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+
+{% endblock head %}
 {% block header %}
 <header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#0058c9;">
-   <div class="header__top" style="padding:10px ; background: #FFF;height: 80px;">
-      <div class="header__top-logo">
+   <div class="header__top" style="padding:0px ;height: 80px;">
+      <!-- <div class="header__top-logo">
          <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
-        </div>
-      <div class="header__top-nav">
-         <nav role="navigation">
+        </div> -->
+      <!-- <div class="header__top-nav">
+        <nav role="navigation">
             <ul class="desktop-menu only-desktop">
                <li><a class="active js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
                <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
@@ -18,16 +193,49 @@
             </ul>
            
            
-         </nav>
-      </div>
-      <div class="header__top-social only-desktop">
+         </nav> 
+          
+      </div> -->
+      <!-- <div class="header__top-social only-desktop">
        <ul class="social-icons">
            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           
           
        </ul>
-      </div>
+      </div> -->
+      <nav class="navbar navbar-expand-custom navbar-mainbg" style="width: 100%;padding-top: 10px;height: 72px;">
+         <div class="header__top-logo">
+            <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
+           </div>
+         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fas fa-bars text-white"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none;">
+             <ul class="navbar-nav ml-auto">
+                 <div class="hori-selector" style="top: 46.5px; left: 0px; height: 46.5px; width: 622px;"><div class="left"></div><div class="right"></div></div>
+                 <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>
+                       Dashboard</a>
+                 </li>
+                 <li class="nav-item active">
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                 </li>
+             </ul>
+         </div>
+     </nav>
    </div>
    <div class="header__banner">
       <div class="top-banner-container">
@@ -63,7 +271,7 @@
      </div>
    <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
    data-element="main" style="border-style: none;">
-     <img class="pagebuilder-mobile-hidden" src="{% static 'images/face2.png' %}" alt="" title="" 
+     <img class="pagebuilder-mobile-hidden" src="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149" alt="" title="" 
    data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
   </figure>
   <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
@@ -74,7 +282,7 @@
   </figure>
   <figure class="cookie-small-5 cookie-small" data-content-type="image" data-appearance="full-width" 
    data-element="main" style="border-style: none;">
-     <img class="pagebuilder-mobile-hidden" src="{% static 'images/face.png' %}" alt="" title="" 
+     <img class="pagebuilder-mobile-hidden" src="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149" alt="" title="" 
    data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
   </figure>
   <script>
@@ -128,7 +336,7 @@
              <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
                 <div class="grid-order">10</div>
                 <a href="/produits#oreo-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="oreo-double-creme-157g">
-                   <img alt="oreo product" class="responsive animateproduct " src="{% static 'images/product3.png' %}">
+                   <img alt="oreo product" class="responsive animateproduct " src="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149">
                 </a>
              </div>
              <div class="grid-item hovercursor hovercursor grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
@@ -232,3 +440,9 @@
  
 
 {% endblock content %}
+
+
+{% block js %}
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <script src="{% static 'js/nav.js' %}"></script>
+{% endblock js %}
