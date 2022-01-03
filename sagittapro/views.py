@@ -63,3 +63,7 @@ def faq(request):
 def panier(request):
     context={}
     return render(request,"pages/panier.html",context)
+
+def about(request):
+    context={}
+    return render(request,"pages/about.html",context)

@@ -1,0 +1,30 @@
+#about-page{
+    min-height:100vh;
+    padding-bottom:25px;
+    background-color:#fff;
+}
+
+#about-page h1 {
+font-size: 3em;
+font-weight: bold;
+font-family: 'Lobster', 'Roboto', serif;
+}
+
+#about-page .row {
+font-size: 1.1em;
+/* margin-top: 7%; */
+padding-top: 7%;
+}
+
+
+
+.row {
+/* margin-top: 10%; */
+width: 100%;
+}
+.row::before{
+ content:none;
+}
+.row div {
+padding-top: 20px;
+}

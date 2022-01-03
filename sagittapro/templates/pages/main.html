@@ -13,42 +13,69 @@
 
 {% endblock head %}
 {% block header %}
-<header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#0058c9;">
-   <div class="header__top" style="padding:0px ;height: 80px;">
+<header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#5161ce;">
+     <!-- <div class="header__top" style="padding:0px ;height: 80px;">
       
-      <nav class="navbar navbar-expand-custom navbar-mainbg" style="width: 100%;padding-top: 10px;height: 72px;">
-         <div class="header__top-logo">
-            <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
-           </div>
-         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <i class="fas fa-bars text-white"></i>
-         </button>
+    <nav class="navbar navbar-expand-custom navbar-mainbg" style="width: 80%;margin: auto;padding-top: 10px;height: 72px;">
+         
+        
          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none;">
-             <ul class="navbar-nav ml-auto">
+            <div class="header__top-logo">
+               <a class="logo" href="/"><img alt="OREO" src="{% static 'images/logobely1.png' %}"></a>
+              </div> 
+            <ul class="navbar-nav ml-auto">
                  <div class="hori-selector" style="top: 46.5px; left: 0px; height: 46.5px; width: 622px;"><div class="left"></div><div class="right"></div></div>
-                 <li class="nav-item">
-                     <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>
-                       Dashboard</a>
+                 <li class="nav-item active" >
+                     <a class="nav-link" href="javascript:void(0);"><i class="fas fa-home"></i>Acceuil</a>
                  </li>
-                 <li class="nav-item active">
-                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
-                 </li>
+                 
                  <li class="nav-item">
-                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
-                 </li>
+                     <a class="nav-link" id="sif" href="javascript:void(0);"><i class="fab fa-product-hunt"></i>Produits</a>
+                
+                  </li>
+                 <!-- <li class="nav-item">
+                     <a class="nav-link" href="javascript:void(0);"><i class="fas fa-list"></i>Recettes</a>
+                 </li> 
                  <li class="nav-item">
-                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-card"></i>Qui somme Nous?</a>
                  </li>
                  <li class="nav-item">
-                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-question-circle"></i>FaQ</a>
                  </li>
              </ul>
          </div>
-     </nav>
+     </nav> 
+     
+   </div>-->
+
+   <div class="header__top" style="padding:10px ; background: #FFF;height: 80px;">
+      <div class="header__top-logo">
+         <a class="logo" href="/"><img alt="OREO" src="/static/images/logobely1.png"></a>
+        </div>
+      <div class="header__top-nav">
+         <nav role="navigation">
+            <ul class="desktop-menu only-desktop">
+               <li><a class="active js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
+               <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
+               <li><a class="js-event-cta" href="/about" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">About</a></li>
+               <li><a class="js-event-cta" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
+            </ul>
+           
+           
+         </nav>
+      </div>
+      <div class="header__top-social only-desktop">
+       <ul class="social-icons">
+           <li style="font-size: 2rem;"><a href="#"><i style="top: 22px;
+    left: 21px;" class="fab fa-instagram"></i></a></li>
+           <li style="font-size: 2rem;"><a href="#" ><i style="top: 22px;
+            left: 21px;" class="fab fa-facebook-f"></i></a></li>
+          
+          
+       </ul>
+      </div>
    </div>
+
    <div class="header__banner">
       <div class="top-banner-container">
     
@@ -80,8 +107,21 @@
      </a>
      </div>
    <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
+   data-element="main" style="border-style: none;right: 155px;">
+     <img class="pagebuilder-mobile-hidden"  src="{% static 'images/cookie.png' %}"  alt="" title="" 
+   data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
+  </figure>
+  
+  <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
+  data-element="main" style="border-style: none;bottom: 350px;
+  right: 980px;">
+    <img class="pagebuilder-mobile-hidden" src="{% static 'images/face2.png' %}" alt="" title="" 
+  data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
+ </figure>
+ 
+  <figure class="cookie-small-5 cookie-small" data-content-type="image" data-appearance="full-width" 
    data-element="main" style="border-style: none;">
-     <img class="pagebuilder-mobile-hidden" src="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149" alt="" title="" 
+     <img class="pagebuilder-mobile-hidden" src="{% static 'images/cookie.png' %}" alt="" title="" 
    data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
   </figure>
   <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
@@ -90,28 +130,42 @@
      <img class="pagebuilder-mobile-hidden" src="{% static 'images/face2.png' %}" alt="" title="" 
    data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
   </figure>
-  <figure class="cookie-small-5 cookie-small" data-content-type="image" data-appearance="full-width" 
-   data-element="main" style="border-style: none;">
-     <img class="pagebuilder-mobile-hidden" src="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149" alt="" title="" 
-   data-element="desktop_image" style="max-width: 100%; height: auto;height: 120px;">
-  </figure>
   <script>
-     setInterval(() => {
-        document.querySelectorAll(".cookie-small")[0].style.animation="cookiesmove 6s linear infinite";
-        setTimeout(() => {
-        document.querySelectorAll(".cookie-small")[0].style.animation="cookies 6s linear infinite"
-     }, 6000);
-     // 
-     document.querySelectorAll(".cookie-small")[1].style.animation="cookiesmove 6s linear infinite";
-        setTimeout(() => {
-        document.querySelectorAll(".cookie-small")[1].style.animation="cookies 6s linear infinite"
-     }, 6000);
-     // 
-     document.querySelectorAll(".cookie-small")[2].style.animation="cookiesmove 6s linear infinite";
-        setTimeout(() => {
-        document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite"
-     }, 6000);
-     }, 6000);
+    
+    setInterval(() => {
+      document.querySelectorAll(".cookie-small")[0].style.animation="cookiesmove 6s linear infinite";
+      document.querySelectorAll(".cookie-small")[1].style.animation="cookiesmove 6s linear infinite";
+      document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite";
+      document.querySelectorAll(".cookie-small")[3].style.animation="cookies 6s linear infinite";
+      
+      // setInterval(() => {
+      //    document.querySelectorAll(".cookie-small")[0].style.animation="cookies 6s linear infinite";
+      // document.querySelectorAll(".cookie-small")[1].style.animation="cookies 6s linear infinite";
+      // document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite";
+      // document.querySelectorAll(".cookie-small")[3].style.animation="cookies 6s linear infinite";
+      // }, 3000);
+       
+    }, 3000);
+      //   document.querySelectorAll(".cookie-small")[0].style.animation="cookiesmove 6s linear infinite";
+   //      setTimeout(() => {
+   //      document.querySelectorAll(".cookie-small")[0].style.animation="cookies 6s linear infinite"
+   //   }, 6000);
+   //   // 
+   // //   document.querySelectorAll(".cookie-small")[1].style.animation="cookiesmove 6s linear infinite";
+   //      setTimeout(() => {
+   //      document.querySelectorAll(".cookie-small")[1].style.animation="cookies 6s linear infinite"
+   //   }, 6000);
+   //   // 
+   //   document.querySelectorAll(".cookie-small")[2].style.animation="cookiesmove 6s linear infinite";
+   //      setTimeout(() => {
+   //      document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite"
+   //   }, 6000);
+     
+   //   document.querySelectorAll(".cookie-small")[3].style.animation="cookiesmove 6s linear infinite";
+   //      setTimeout(() => {
+   //      document.querySelectorAll(".cookie-small")[3].style.animation="cookies 6s linear infinite"
+     
+   //   }, 6000);
   </script>
    <div class="white-fill">
      <img src="{% static 'images/twist-fill.png' %}" alt="">
