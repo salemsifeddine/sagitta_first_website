@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="icon" href="https://cdn.shopify.com/s/files/1/1463/8084/files/10212_Protein_Cookie_LandingPage_Intro_Cookie.png?149">
     
+    
     {% block head %}
       
     {% endblock head %}
@@ -364,6 +365,19 @@
 
   Scrollbar.init(document.body);
   </script>
+    <script>
+        var pathnm=window.location.pathname
+        var targetclass= "." + pathnm.replaceAll("/","") + "anchor"
+
+        if(document.querySelector(targetclass)){
+            document.querySelector(targetclass).classList.add("active")
+        }else{
+            document.querySelector(".mainanchor").classList.add("active")
+        }
+        // document.querySelector(targetclass).classList.add("active")
+        // console.log(document.querySelector(targetclass),"." + pathnm.replaceAll("/","") + "anchor")
+
+    </script>
   {% block js %}
     
   {% endblock js %}

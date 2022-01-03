@@ -135,13 +135,15 @@ header, hgroup, main, nav, section {
 
 .desktop-menu .active {
     border-bottom: 2px solid #fff;
+    color:#1064ad
 }
 .desktop-menu li a {
-    color: #333;
+    color: #FFF;
    
     letter-spacing: 0;
     font-size: 30px;
 }
+
 
 .header__top-social .social-link {
     display: -webkit-box;
