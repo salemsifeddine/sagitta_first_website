@@ -45,7 +45,7 @@ main{
   height:10px;
 }
 
-/* .header.cookie, .header.home, .header.oreo-terms-of-use, .header.terms-of-use {
+/* .header.cookie, .header.home, .header.Belidelice-terms-of-use, .header.terms-of-use {
     background: -webkit-radial-gradient(#41b6e6, #0283e6);
     background: -o-radial-gradient(#41b6e6, #0283e6);
     background: radial-gradient(#41b6e6, #0283e6); 
@@ -617,7 +617,7 @@ figure.effect-apollo {
 
 .grid-text {
     font-size: 20px;
-    font-family: OreoSansBold;
+    font-family: BelideliceSansBold;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
