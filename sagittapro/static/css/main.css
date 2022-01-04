@@ -547,7 +547,8 @@ figure.effect-apollo {
 }
 .responsive {
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    margin: auto;
     
 }
 .height100{
@@ -640,7 +641,7 @@ product, .home .grid-item--blueNavy.grid-item--product:hover {
 
 .preloader{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color:#1064ad;
     position:fixed;
     top:0;
