@@ -4,8 +4,6 @@
 
 
 {% block head %}
-<link rel="stylesheet" href="{% static 'css/productDet.css' %}">
-<link rel="stylesheet" href="{% static 'css/panier.css' %}">
   <link rel="stylesheet" href="{% static 'css/products.css' %}">
   <link rel="stylesheet" href="{% static 'css/ecom.css' %}">
 
@@ -123,7 +121,7 @@
 
   <div class="wrapper products" id="pageSelector">
   <div class="overlay" style="display: none;">
-    <img src="/~/media/Belidelice/fr2018/images/common/ajax-loader.gif" alt="Loading"></div>
+    <img src="{% static 'images/loader.gif' %}" alt="Loading"></div>
   <div data-open="Belidelice chocolate creme"></div>
   <div class="row">
     <div class="col-lg-12 hero-text">
@@ -757,11 +755,13 @@ min-height: 100vh;position: fixed;top: 0;display:none;background-color: #faebd79
   </div>
   </div>
    </div>
-   <script src="{% static 'js/productDet.js' %}"></script>
-
 
 </div>
-<script src="{% static 'js/products.js' %}"></script>
-<script src="{% static 'js/ecom.js' %}"></script>
+
 
 {% endblock content %}
+
+{% block js %}
+  <script src="{% static 'js/products.js' %}"></script>
+  <script src="{% static 'js/ecom.js' %}"></script>
+{% endblock js %}
