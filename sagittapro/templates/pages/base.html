@@ -331,7 +331,7 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     
-    <script src="{% static 'js/main.js' %}"></script>
+   
     <!-- <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script> -->
     <script src="{% static 'js/charming.min.js' %}"></script>
     <script src="{% static 'js/TweenMax.min.js' %}"></script>
@@ -360,6 +360,7 @@
      social_panel_container.classList.remove('visible')
   });
 
+//   scollbar smooth
   var Scrollbar = window.Scrollbar;
 
   Scrollbar.init(document.body);
@@ -377,6 +378,9 @@
         // console.log(document.querySelector(targetclass),"." + pathnm.replaceAll("/","") + "anchor")
 
     </script>
+    <!-- <script src="{% static 'js/main.js' %}"></script> -->
+
+   
   {% block js %}
     
   {% endblock js %}
