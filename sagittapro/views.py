@@ -4,22 +4,22 @@ from .models import *
 # Create your views here.
 
 def main(request):
-    context={}
+    context={"title":"Acceuil"}
     return render(request,"pages/main.html",context)
 
 
 def products(request):
-    context={}
+    context={"title":"Produits"}
     return render(request,"pages/products.html",context)
 
 
 
-from django.views import generic
-class ProductDetailView(generic.DetailView):
+# from django.views import generic
+# class ProductDetailView(generic.DetailView):
     
     
-    model=Product
-    template_name="pages/test.html"
+#     model=Product
+#     template_name="pages/test.html"
     # def get_context_data(self,**kwargs):
 
       
@@ -56,14 +56,12 @@ class ProductDetailView(generic.DetailView):
 
 def faq(request):
     context={
-        "faqs":FaQ.objects.all()
+        # "faqs":FaQ.objects.all(),
+        "title":"F&Q"
     }
     return render(request,"pages/faq.html",context)
 
-def panier(request):
-    context={}
-    return render(request,"pages/panier.html",context)
 
 def about(request):
-    context={}
+    context={"title":"A Propos"}
     return render(request,"pages/about.html",context)
