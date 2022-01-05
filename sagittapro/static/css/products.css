@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    color: #000;
+}
+table{
+    color: #000;
 }
 .products .grid-sizer {
     width: 24.25%;

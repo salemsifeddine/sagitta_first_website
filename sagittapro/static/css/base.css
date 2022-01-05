@@ -600,3 +600,7 @@ a:focus {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
+.product-description--block-close{
+	cursor: pointer;
+}

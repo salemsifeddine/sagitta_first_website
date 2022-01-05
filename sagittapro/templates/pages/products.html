@@ -120,8 +120,14 @@
 {% block content %}
 
   <div class="wrapper products" id="pageSelector">
-  <div class="overlay" style="display: none;">
-    <img src="{% static 'images/loader.gif' %}" alt="Loading"></div>
+  <!-- <div class="overlay" id="ovrl" style="display: none;">
+    <img src="{% static 'images/loader.gif' %}" alt="Loading">
+  </div>
+  <script>
+    document.getElementById("overlay").addEventListener("load",function(){
+      document.getElementById("ovrl").style.display= "none"
+    })
+  </script> -->
   <div data-open="Belidelice chocolate creme"></div>
   <div class="row">
     <div class="col-lg-12 hero-text">
@@ -365,8 +371,8 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
 
   </div>
 </div>
-<div class="overlay" style="width: 100%;
-min-height: 100vh;position: fixed;top: 0;display:none;background-color: #faebd794;">
+<div class="overlay" id="overlay" style="width: 100%;z-index: 999999999999999;padding: 50px;
+min-height: 100vh;position: fixed;top: 0;left: 0;display:none;background-color: #faebd7a1;">
 
 
 <div class="sweetControl grid-item product-description product-description-purple 
@@ -379,7 +385,10 @@ min-height: 100vh;position: fixed;top: 0;display:none;background-color: #faebd79
   <i class="product-description--block-close fa fa-times"></i>
   <div class="row" style="margin:0;">
   <div class="col-lg-6 product-image">
-  <div class="product-description--block-image"><img class="responsive" src="https://images.sweetauthoring.com/product/87883.png" alt=""></div><div class="product-description--block-image-2"><img class="responsive" src="https://images.sweetauthoring.com/product/87882.png" alt=""></div></div>
+  <div class="product-description--block-image" style="width: 300px;
+  height: 230px;"><img class="responsive" src="{% static 'images/product5.png' %}" alt=""></div>
+  <div class="product-description--block-image-2" style="width: 300px;
+  height: 230px;"><img style="width: 100%;" class="responsive" src="{% static 'images/product4.png' %}" alt=""></div></div>
   <div class="col-lg-6 product-content">
   <div class="product-description--block-content">
   <div class="row">
