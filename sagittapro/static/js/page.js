@@ -14,16 +14,16 @@ $(window).on("scroll",function(e){
         document.querySelectorAll(".gtt").forEach(ele=>{
             ele.style.zIndex ="2"
         })
-        length=document.querySelectorAll(".gtt").length
-        document.querySelectorAll(".gtt")[Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
+        
     }
     
-   
+    length=document.querySelectorAll(".gtt").length
+    document.querySelectorAll(".gtt")[Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
     
 })
 
 document.querySelectorAll(".gtt").forEach(ele=>{
-    ele.style.left = Math.random()*250 + "px"
-    ele.style.top = Math.random()*300 + "px"
+    ele.style.left = Math.random()*150 + "px"
+    ele.style.top = Math.random()*(200-35) + 35 + "px"
 })
 

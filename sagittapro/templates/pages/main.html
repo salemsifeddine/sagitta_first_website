@@ -13,7 +13,8 @@
 <link rel="stylesheet" href="{% static 'css/nav.css' %}">  
 {% endblock head %}
 {% block header %}
-<header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#5161ce;">
+<header id="header" class="header wrapper home" style="margin: 0;padding: 0;background:#5161ce;position: sticky;
+top: 0;">
      <!-- <div class="header__top" style="padding:0px ;height: 80px;">
       
     <nav class="navbar navbar-expand-custom navbar-mainbg" style="width: 80%;margin: auto;padding-top: 10px;height: 72px;">
@@ -52,7 +53,7 @@
       <div class="header__top-logo">
          <a class="logo" href="/"><img alt="Belidelice" src="/static/images/logobely1.png"></a>
         </div>
-      <div class="header__top-nav">
+      <div class="header__top-nav " style="z-index:4">
          <nav role="navigation">
             <ul class="desktop-menu only-desktop">
                <li><a class="mainanchor js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
@@ -85,21 +86,35 @@
            
             <div class="swiper-slide"><img  src="{% static 'images/Belidelicefr.png' %}" alt="watermark" width="421" height="421"></div>
          </div> -->
-         <div class="splited-bely">
+         <!-- <div class="splited-bely">
            
-            <!-- <div class="left-bely">
-               <img src="{% static 'images/leftBelidelice.png' %}" alt="">
-            </div>
-            <div class="right-bely" style="right:22px">
-               <img src="{% static 'images/rightBelidelice.png' %}" alt="">
-            </div> -->
+          
             <div class="left-bely">
               <img src="{% static 'images/bely 22222.png' %}" alt="">
            </div>
            <div class="right-bely">
               <img src="{% static 'images/bely1.png' %}" alt="">
            </div>
-         </div>
+         </div> -->
+         <div class="cont">
+            <div class="top"><img src="{% static 'images/toptop.png' %}" alt=""></div>
+            <div class="btm"><img src="{% static 'images/btmbtm.png' %}" alt=""></div>
+            <div class="random">
+                <div class="gtt">
+                    <img src="{% static 'images/cookie.png' %}" alt="">
+                </div>
+                <div class="gtt">
+                    <img src="{% static 'images/cookie.png' %}" alt="">
+                </div>
+                <div class="gtt">
+                    <img src="{% static 'images/cookie.png' %}" alt="">
+                </div>
+                <div class="gtt">
+                    <img src="{% static 'images/cookie.png' %}" alt="">
+                </div>
+                
+            </div>
+        </div>
       
       </div>
    </div>
@@ -177,132 +192,134 @@
 
 {% block content %}
   
-<div class="wrapper home" id="pageSelector">
+<div style="position: sticky; background-color: white;top: 100vh;">
+   <div class="wrapper home" id="pageSelector">
             
-    <div class="row">
-       <div class="col-lg-12 hero-text mobile-hero-text">
-          <h1 class="hovercursor" style="text-align: center;">Découvrez le monde merveilleux de Beliedelice </h1>
-       </div>
-    </div>
-    <div class="row js-Belidelice-product">
-       <div class="col-lg-12">
-          <div class="grid" style="position: relative; height: 514.117px;">
-             <div class="grid-sizer"></div>
-             <div class="grid-gutter"></div>
-             <div class="grid-item grid-item--default   grid-item--blueNavy hovercursor" style="position: absolute; left: 0%; top: 0px;">
-                <div class="grid-order">8</div>
-                <img style="width: 100%; height:100%" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/tobssycookies.jpg' %}">
-             </div>
-             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
-                <div class="grid-order">9</div>
-                <a href="/produits#Belidelice-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-crispy-en-thin-vanille-192g">
-                   <img style="animation-delay: .5s;" alt="Belidelice product" class="responsive animateproduct height100" src="{% static 'images/product4.png' %}">
-                </a>
-             </div>
-             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
-                <div class="grid-order">10</div>
-                <a href="/produits#Belidelice-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-double-creme-157g">
-                   <img alt="Belidelice product" class="responsive animateproduct height100" src="{% static 'images/product3.png' %}">
-                </a>
-             </div>
-             <div class="grid-item hovercursor hovercursor grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
-                <div class="grid-order">11</div>
-                <img style="width: 100%; height:100%" alt="Belidelice biscuit" class="responsive hovercursor" src="{% static 'images/cookiescadre.jpg' %}">
-             </div>
-             <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
-                <div class="grid-order">12</div>
-                <a href="/produits#Belidelice-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-original-format-familial-308g">
-                   <img alt="Belidelice product" class="responsive animateproduct" style="animation-delay: 3s;" src="{% static 'images/product6.png' %}">
-                </a>
-             </div>
-             <div class="grid-item hovercursor grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
-                <div class="grid-order">13</div>
-                <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Belidelice Products - HP">
-                   <span >Découvrez tous<br> nos produits</span>
-                   <img class="arrowlong" alt="arrowlong" src="{% static 'images/arrow-right.png' %}">
-                </a>
-             </div>
-             <div class="grid-item hovercursor grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
-                <div class="grid-order">14</div>
-                <span >Découvrez toutes les saveurs BELIEDELICE </span>
-             </div>
-             
-          
-             <div class="grid-item hovercursor grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
-                <div class="grid-order">15</div>
-                <img style="width:100%" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/image16.png' %}">
-             </div>
-          </div>
-       </div>
-    </div>
-    
-    
- </div>
-
- <!--  -->
- <div class="wrapper home" id="pageSelector">
-    
-    <div class="row">
-       <div class="col-lg-12 hero-text mobile-hero-text">
-          <h1 class="hovercursor" style="text-align: center;">Nos délicieux produits</h1>
-         
-       </div>
-    </div>
-    <div class="row js-Belidelice-product">
-       <div class="col-lg-12">
-          <div class="grid" style="position: relative; height: 514.117px;">
-             <div class="grid-sizer"></div>
-             <div class="grid-gutter"></div>
-             <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 0%; top: 0px;">
-                <div class="grid-order">8</div>
-                <img alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/beli.png' %}">
-             </div>
-             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
-                <div class="grid-order">9</div>
-                <a href="/produits#Belidelice-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-crispy-en-thin-vanille-192g">
-                   <img alt="Belidelice product" class="responsive animateproduct" style="width: 130px;" src="{% static 'images/product5.png' %}">
-                </a>
-             </div>
-             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
-                <div class="grid-order">10</div>
-                <a href="/produits#Belidelice-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-double-creme-157g">
-                   <img style="height: 187px;" alt="Belidelice product" class="responsive animateproduct" src="{% static 'images/fatcha.png' %}">
-                </a>
-             </div>
-             <div class="grid-item grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
-                <div class="grid-order">11</div>
-                <img alt="Belidelice biscuit" class="responsive hovercursor" src="{% static 'images/1.jpg' %}">
-             </div>
-             <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
-                <div class="grid-order">12</div>
-                <a href="/produits#Belidelice-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-original-format-familial-308g">
-                   <img alt="Belidelice product" class="responsive animateproduct" src="{% static 'images/cookies.png' %}">
-                </a>
-             </div>
-             <div class="grid-item grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
-                <div class="grid-order">13</div>
-                <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Belidelice Products - HP">
-                   <span >Découvrez tous<br> nos produits</span>
-                   <img class="arrowlong"  alt="arrowlong" src="{% static 'images/arrow-right.png' %}">
-                </a>
-             </div>
-             <div class="grid-item grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
-                <div class="grid-order">14</div>
-                <span >Découvrez toutes les saveurs Beliedelice</span>
-             </div>
-             
-          
-             <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
-                <div class="grid-order">15</div>
-                <img style="width:100%;height: 100%;" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/2.jpg' %}">
-             </div>
-          </div>
-       </div>
-    </div>
-    
-    
- </div>  
-
+      <div class="row">
+         <div class="col-lg-12 hero-text mobile-hero-text">
+            <h1 class="hovercursor" style="text-align: center;">Découvrez le monde merveilleux de Beliedelice </h1>
+         </div>
+      </div>
+      <div class="row js-Belidelice-product">
+         <div class="col-lg-12">
+            <div class="grid" style="position: relative; height: 514.117px;">
+               <div class="grid-sizer"></div>
+               <div class="grid-gutter"></div>
+               <div class="grid-item grid-item--default   grid-item--blueNavy hovercursor" style="position: absolute; left: 0%; top: 0px;">
+                  <div class="grid-order">8</div>
+                  <img style="width: 100%; height:100%" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/tobssycookies.jpg' %}">
+               </div>
+               <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
+                  <div class="grid-order">9</div>
+                  <a href="/produits#Belidelice-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-crispy-en-thin-vanille-192g">
+                     <img style="animation-delay: .5s;" alt="Belidelice product" class="responsive animateproduct height100" src="{% static 'images/product4.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
+                  <div class="grid-order">10</div>
+                  <a href="/produits#Belidelice-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-double-creme-157g">
+                     <img alt="Belidelice product" class="responsive animateproduct height100" src="{% static 'images/product3.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item hovercursor hovercursor grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
+                  <div class="grid-order">11</div>
+                  <img style="width: 100%; height:100%" alt="Belidelice biscuit" class="responsive hovercursor" src="{% static 'images/cookiescadre.jpg' %}">
+               </div>
+               <div class="grid-item hovercursor grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
+                  <div class="grid-order">12</div>
+                  <a href="/produits#Belidelice-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-original-format-familial-308g">
+                     <img alt="Belidelice product" class="responsive animateproduct" style="animation-delay: 3s;" src="{% static 'images/product6.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item hovercursor grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
+                  <div class="grid-order">13</div>
+                  <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Belidelice Products - HP">
+                     <span >Découvrez tous<br> nos produits</span>
+                     <img class="arrowlong" alt="arrowlong" src="{% static 'images/arrow-right.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item hovercursor grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
+                  <div class="grid-order">14</div>
+                  <span >Découvrez toutes les saveurs BELIEDELICE </span>
+               </div>
+               
+            
+               <div class="grid-item hovercursor grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
+                  <div class="grid-order">15</div>
+                  <img style="width:100%" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/image16.png' %}">
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+   </div>
+  
+   <!--  -->
+   <div class="wrapper home" id="pageSelector">
+      
+      <div class="row">
+         <div class="col-lg-12 hero-text mobile-hero-text">
+            <h1 class="hovercursor" style="text-align: center;">Nos délicieux produits</h1>
+           
+         </div>
+      </div>
+      <div class="row js-Belidelice-product">
+         <div class="col-lg-12">
+            <div class="grid" style="position: relative; height: 514.117px;">
+               <div class="grid-sizer"></div>
+               <div class="grid-gutter"></div>
+               <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 0%; top: 0px;">
+                  <div class="grid-order">8</div>
+                  <img alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/beli.png' %}">
+               </div>
+               <div class="grid-item grid-item--default  grid-item-height-2 grid-item--pink grid-item--product" style="position: absolute; left: 25.1647%; top: 0px;">
+                  <div class="grid-order">9</div>
+                  <a href="/produits#Belidelice-crispy-en-thin-vanille-192g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-crispy-en-thin-vanille-192g">
+                     <img alt="Belidelice product" class="responsive animateproduct" style="width: 130px;" src="{% static 'images/product5.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blue grid-item--product" style="position: absolute; left: 50.4193%; top: 0px;">
+                  <div class="grid-order">10</div>
+                  <a href="/produits#Belidelice-double-creme-157g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-double-creme-157g">
+                     <img style="height: 187px;" alt="Belidelice product" class="responsive animateproduct" src="{% static 'images/fatcha.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item grid-item--default   grid-item--blueNavy" style="position: absolute; left: 75.6738%; top: 0px;">
+                  <div class="grid-order">11</div>
+                  <img alt="Belidelice biscuit" class="responsive hovercursor" src="{% static 'images/1.jpg' %}">
+               </div>
+               <div class="grid-item grid-item--default  grid-item-height-2 grid-item--blueNavy grid-item--product" style="position: absolute; left: 0%; top: 175px;">
+                  <div class="grid-order">12</div>
+                  <a href="/produits#Belidelice-original-format-familial-308g" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Products" data-label="Belidelice-original-format-familial-308g">
+                     <img alt="Belidelice product" class="responsive animateproduct" src="{% static 'images/cookies.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item grid-text grid-text-link  grid-item-height-2 grid-item--blue" style="position: absolute; left: 75.6738%; top: 175px;padding-top: 110px;">
+                  <div class="grid-order">13</div>
+                  <a href="/produits" class="js-event-cta" data-event="info-click" data-category="Informational  Action" data-action="Discover All Products" data-label="Belidelice Products - HP">
+                     <span >Découvrez tous<br> nos produits</span>
+                     <img class="arrowlong"  alt="arrowlong" src="{% static 'images/arrow-right.png' %}">
+                  </a>
+               </div>
+               <div class="grid-item grid-text   grid-item--green grid-padding-for-text-3lines" style="position: absolute; left: 25.1647%; top: 350px;">
+                  <div class="grid-order">14</div>
+                  <span >Découvrez toutes les saveurs Beliedelice</span>
+               </div>
+               
+            
+               <div class="grid-item grid-item--default   grid-item--blueNavy " style="position: absolute; left: 50.4193%; top: 350px;">
+                  <div class="grid-order">15</div>
+                  <img style="width:100%;height: 100%;" alt="Belidelice product" class="responsive hovercursor" src="{% static 'images/2.jpg' %}">
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
+   </div>  
+  
+</div>
  
 
 {% endblock content %}
@@ -310,5 +327,5 @@
 
 {% block js %}
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
+   <script src="{% static 'js/page.js' %}"></script>
 {% endblock js %}

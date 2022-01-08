@@ -193,7 +193,7 @@ header, hgroup, main, nav, section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    bottom: -65px;
+    bottom: -35px;
     z-index:2;
     
 }
@@ -524,7 +524,12 @@ figure.effect-apollo {
     width: 100%;
     overflow: hidden;
 }
+
+
 .home {
+  background: #fff;
+
+
     margin-top: 30px;
 }
 .home .grid-item, .home .grid-sizer {
@@ -689,6 +694,7 @@ product, .home .grid-item--blueNavy.grid-item--product:hover {
 
 
 .footer-basic{
+  padding-top: 50px;
   background-color: #e27098c4;
 }
 
@@ -802,3 +808,56 @@ h1{
   animation: 1s ease-in-out infinite arrow-go-to;
 }
 
+
+
+/*  */
+
+.cont{
+  height: 250px;
+width: 275px;
+margin: auto;
+position: sticky;
+bottom: 114px;
+left: 40%;
+}
+.top{
+  width: 86%;
+
+position: absolute;
+left: -8px;
+top: 22px;
+z-index: 2;
+
+}
+.btm{
+  width: 100%;
+
+position: absolute;
+top: 41px;
+z-index:3;
+
+}
+.top img, .btm img{
+  width:100%;
+  height:100%;
+}
+
+.gtt{
+  width:50px;
+  height:50px;
+  position: absolute;
+  z-index: 1;
+  transition:all .3s ease-in-out;
+}
+
+.gtt img{
+  width:100%;
+  height:100%;
+
+}
+
+.random{
+  width: 70%;
+margin: 30px;
+position: relative;
+}
