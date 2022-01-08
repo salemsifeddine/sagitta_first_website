@@ -51,4 +51,22 @@ gridItems.forEach(gridItem => {
 document.querySelector(".product-description--block-close").addEventListener("click",function(){
     $(".overlay").hide(200)
     console.log("close")
+});
+
+
+var productsClickable=document.querySelectorAll(".with-click")
+
+productsClickable.forEach(ele=>{
+    ele.addEventListener("click",function(){
+        var srcimgtarget=ele.children[1].children[0].src
+        document.querySelector(".image1").src = srcimgtarget
+        document.querySelector(".image2").src = srcimgtarget
+    })
+})
+
+
+document.getElementById("overlay").addEventListener("click",function(e){
+    e.preventDefault();
+    e.stopPropagation()
+    console.log("d")
 })
