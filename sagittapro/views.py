@@ -13,6 +13,11 @@ def products(request):
     return render(request,"pages/products.html",context)
 
 
+def page(request):
+    context={"title":"test"}
+    return render(request,"pages/page.html",context)
+
+
 
 # from django.views import generic
 # class ProductDetailView(generic.DetailView):
