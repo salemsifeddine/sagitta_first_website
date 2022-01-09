@@ -150,7 +150,7 @@
 }
 
 .cookie-small {
-    position: absolute;
+    position: fixed;
     animation: cookies 6s linear infinite;
 }
 figure {

@@ -220,6 +220,7 @@
 	right: 20px;
 	z-index: 9999999999999999999999999999999999999999;
 	font-family: "Pacifico",cursive,sans-serif;
+	opacity: 0;
 }
 
 .floating-btn:hover {
