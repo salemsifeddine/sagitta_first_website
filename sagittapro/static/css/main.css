@@ -193,7 +193,7 @@ header, hgroup, main, nav, section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    bottom: -35px;
+    bottom: -45px;
     z-index:2;
     
 }

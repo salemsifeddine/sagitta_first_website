@@ -13,6 +13,15 @@
 <link rel="stylesheet" href="{% static 'css/nav.css' %}">  
 {% endblock head %}
 {% block header %}
+<style>
+   .white-fill{
+    width: 100%;
+    position: relative;
+    /* left: 0;
+    bottom:-70px;
+    height:230px;  */
+}
+</style>
 <header id="header" class="header wrapper home" style="height:200vh;margin: 0;padding: 0;background:#5161ce;position: sticky;
 top: 0;">
      <!-- <div class="header__top" style="padding:0px ;height: 80px;">
@@ -118,11 +127,7 @@ top: 0;">
       
       </div>
    </div>
-   <div class="header__arrow-down">
-     <a href="#home">
-        <img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62">
-     </a>
-     </div>
+   
    <figure class="cookie-small-4 cookie-small" data-content-type="image" data-appearance="full-width" 
    data-element="main" style="border-style: none;right: 155px;">
      <img class="pagebuilder-mobile-hidden"  src="{% static 'images/cookie.png' %}"  alt="" title="" 
@@ -191,9 +196,16 @@ top: 0;">
 {% block content %}
   
 <div style="position: sticky; top: 100vh;">
+   
    <div class="white-fill">
       <img alt="" src="/static/images/twist-fill.png">
+      <div class="header__arrow-down" style="bottom: 0;"> 
+         <a href="#home">
+            <img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62">
+         </a>
+         </div>
    </div>
+   
    <div class="wrapper home" id="pageSelector">
             
       <div class="row">
