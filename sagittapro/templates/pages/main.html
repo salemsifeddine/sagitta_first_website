@@ -152,8 +152,8 @@ top: 0;">
     setInterval(() => {
       document.querySelectorAll(".cookie-small")[0].style.animation="cookiesmove 6s linear infinite";
       document.querySelectorAll(".cookie-small")[1].style.animation="cookiesmove 6s linear infinite";
-      document.querySelectorAll(".cookie-small")[2].style.animation="cookies 6s linear infinite";
-      document.querySelectorAll(".cookie-small")[3].style.animation="cookies 6s linear infinite";
+      document.querySelectorAll(".cookie-small")[2].style.animation="cookiesmove 6s linear infinite";
+      document.querySelectorAll(".cookie-small")[3].style.animation="cookiesmove 6s linear infinite";
       
       // setInterval(() => {
       //    document.querySelectorAll(".cookie-small")[0].style.animation="cookies 6s linear infinite";
@@ -184,15 +184,16 @@ top: 0;">
      
    //   }, 6000);
   </script>
-   <div class="white-fill">
-     <img src="{% static 'images/twist-fill.png' %}" alt="">
-  </div>
+  
   </header>
 {% endblock header %}
 
 {% block content %}
   
-<div style="position: sticky; background-color: white;top: 100vh;">
+<div style="position: sticky; top: 100vh;">
+   <div class="white-fill">
+      <img alt="" src="/static/images/twist-fill.png">
+   </div>
    <div class="wrapper home" id="pageSelector">
             
       <div class="row">
@@ -326,6 +327,7 @@ top: 0;">
 
 
 {% block js %}
+
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <script src="{% static 'js/page.js' %}"></script>
 {% endblock js %}

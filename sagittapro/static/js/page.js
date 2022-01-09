@@ -2,7 +2,17 @@
 $(window).on("scroll",function(e){
     
    
-    console.log(document.querySelectorAll(".gtt")[Math.floor(Math.random()*document.querySelectorAll(".gtt").length)].style.top)
+    if($(this).scrollTop() >= 1900 ){
+        document.querySelectorAll(".cookie-small").forEach(ele=>{
+            ele.style.position="absolute"
+        })
+    }
+
+    if($(this).scrollTop() < 1900 ){
+        document.querySelectorAll(".cookie-small").forEach(ele=>{
+            ele.style.position="fixed"
+        })
+    }
     
     
     valueS = $(this).scrollTop() 

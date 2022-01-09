@@ -4,7 +4,7 @@ var leftBely = document.querySelector(".left-bely")
 var rightBely = document.querySelector(".right-bely")
 
 $(window).on("scroll",function(e){
-    console.log("sss")
+    
     valueS = $(this).scrollTop() 
  
 

@@ -529,8 +529,8 @@ figure.effect-apollo {
 .home {
   background: #fff;
 
-
-    margin-top: 30px;
+/* 
+    margin-top: 30px; */
 }
 .home .grid-item, .home .grid-sizer {
     width: 24.25%;
