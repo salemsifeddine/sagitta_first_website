@@ -16,16 +16,7 @@
   font-weight: 600;
   color: #333;
 }
-.wrapper h2::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 28px;
-  border-radius: 12px;
-  background: #4070f4;
-}
+
 .wrapper form{
   margin-top: 30px;
 }

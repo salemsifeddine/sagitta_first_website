@@ -261,3 +261,46 @@
 		right: 10px;
 	}
 }
+
+
+@keyframes FAQ {
+    0% {
+     transform:rotate(0deg)
+    }
+    100% {
+     transform:rotate(20deg)
+    }
+   }
+
+@keyframes cookies {
+    0% {
+     transform:rotate(0deg)
+    }
+    100% {
+     transform:rotate(360deg)
+    }
+   }
+@keyframes cookiesmove {
+    0% {
+     transform:translate(10px,10px)
+    }
+    20% {
+     transform:translate(30px,30px)
+    }
+    40% {
+     transform:translate(50px,50px)
+    }
+    60% {
+     transform:translate(30px,30px)
+    }
+    80% {
+     transform:translate(10px,10px)
+    }
+    100% {
+     transform:translate(0,0)
+    }
+   }
+
+.img-int{
+	animation: FAQ 2s linear infinite alternate;
+}

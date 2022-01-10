@@ -93,6 +93,7 @@ a {
 
 .header__top-logo{
   position: relative;
+  z-index:999999999999999999999999;
  
 }
 /* .header__top-logo img {
@@ -101,8 +102,8 @@ a {
 } */
 
 .header__top-logo img{
-  width: 72px;
-height: 62px;
+  width: 90px;
+height: 80px;
 }
 
 img {
