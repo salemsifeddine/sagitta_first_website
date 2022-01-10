@@ -17,6 +17,9 @@ def page(request):
     context={"title":"test"}
     return render(request,"pages/page.html",context)
 
+def contact(request):
+    context={"title":"contact"}
+    return render(request,"pages/contact.html",context)
 
 
 # from django.views import generic
