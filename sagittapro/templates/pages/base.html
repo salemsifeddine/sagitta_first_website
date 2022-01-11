@@ -66,7 +66,7 @@
          <h2 style="text-align: center;
          color: #fff;">Newsletter</h2>
          <form method="GET" class="newsletter-form" style="margin: 15px auto;">
-      
+  
             <input name="newsletter" type="email" placeholder="Email address" />
             <button type="submit">
                 <span class="default">Subscribe</span>
@@ -215,9 +215,10 @@
       })
   
       form.addEventListener('submit', e => {
-  
+        e.preventDefault();
           
-        e.preventDefault()
+          
+        
           if(!validateEmail(input.value)) {
               input.focus()
               return

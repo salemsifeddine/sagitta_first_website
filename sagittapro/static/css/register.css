@@ -152,7 +152,7 @@ form .text h3 a:hover{
   .custom-field.one input + .placeholder {
     left: 8px;
     padding: 0px 11px;
-    font-family: sans-serif;
+   
     letter-spacing: .5;
     font-weight: initial;
     font-size: 16px;

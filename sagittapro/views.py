@@ -6,9 +6,14 @@ from django.shortcuts import redirect
 # Create your views here.
 
 
+def newsletterem(request):
+        try:
+            print(request.GET["newsletter"])
+        except :
+            pass
 def main(request):
     context={"title":"Acceuil"}
-    print(request.GET["newsletter"])
+    newsletterem(request)
     return render(request,"pages/main.html",context)
 
 
@@ -27,7 +32,7 @@ def contact(request):
         form=ContactUsForm()
         
     else:
-        print(request.GET["newsletter"])
+        
         form=ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
