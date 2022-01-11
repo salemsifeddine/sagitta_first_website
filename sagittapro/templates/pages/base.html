@@ -65,10 +65,10 @@
         <div class="footer-basic">
          <h2 style="text-align: center;
          color: #fff;">Newsletter</h2>
-         <form class="newsletter-form" style="margin: 15px auto;">
-          
-            <input type="email" placeholder="Email address" />
-            <button>
+         <form method="GET" class="newsletter-form" style="margin: 15px auto;">
+      
+            <input name="newsletter" type="email" placeholder="Email address" />
+            <button type="submit">
                 <span class="default">Subscribe</span>
                 <span class="success">
                     <svg viewBox="0 0 16 16">
@@ -216,12 +216,13 @@
   
       form.addEventListener('submit', e => {
   
-          e.preventDefault()
-  
+          
+        e.preventDefault()
           if(!validateEmail(input.value)) {
               input.focus()
               return
           }
+          
   
           if(!button.classList.contains('active')) {
   
@@ -331,11 +332,11 @@
                       duration: .15
                   }]
               })
-  
+                   
           }
-  
+          
       })
-  
+      
   })
                 </script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->

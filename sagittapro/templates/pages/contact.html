@@ -47,7 +47,7 @@
         <div class="main-contact">
     
             <div class="text-contact">
-                <h2>Contact Us</h2>
+                <h2 id="citation">Contact Us</h2>
             </div>
             <div class="img-contact">
                 <img src="{% static 'images/1.jpg' %}" alt="">
@@ -98,21 +98,21 @@
                       {% csrf_token %}
                       <div class="input-box">
                         <label class="custom-field one">
-                            <input type="text" name="first_name" id="usernameUser" placeholder=" " maxlength="63" required="">
+                            {{form.first_name}}
                          
                           <span class="placeholder">First Name</span>
                         </label>
                       </div>
                       <div class="input-box">
                         <label class="custom-field one">
-                            <input type="text" name="first_name" id="usernameUser" placeholder=" " maxlength="63" required="">
+                          {{form.last_name}}
                          
                           <span class="placeholder">Last Name</span>
                         </label>
                       </div>
                       <div class="input-box">
                         <label class="custom-field one">
-                            <input type="text" name="first_name" id="usernameUser" placeholder=" " maxlength="63" required="">
+                            {{form.email}}
                 
                           <span class="placeholder">Enter your email</span>
                         </label>
@@ -122,7 +122,7 @@
                       <div class="input-box">
                         <label class="custom-field one">
                     
-                            <input type="text" name="first_name" id="usernameUser" placeholder=" " maxlength="63" required="">
+                            {{form.subject}}
                           <span class="placeholder">Subject</span>
                         </label>
                       </div>

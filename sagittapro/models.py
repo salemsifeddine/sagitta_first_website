@@ -39,10 +39,19 @@ class Product(models.Model):
     
     def __str__(self):
         return self.name
-
+class NewsletterEmails(models.Model):
+    email = models.EmailField(blank=True, null=True)
 
 class FaQ(models.Model):
     question = models.CharField(max_length=255)
     answer=models.CharField(max_length=255)
 
+class ContactUs(models.Model):
+    first_name=models.CharField(max_length=60)
+    last_name=models.CharField(max_length=60)
+    email=models.EmailField(max_length=255)
+    subject=models.TextField()
+
+    def __str__(self):
+        return f"{self.first_name} contact"
 

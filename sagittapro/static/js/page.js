@@ -2,7 +2,7 @@
 $(window).on("scroll",function(e){
     var valueS = $(this).scrollTop() 
     
-
+    length=document.querySelectorAll(".gtt").length
     // switch (Math.ceil(valueS/360)) {
         
     //     case 1:
@@ -94,20 +94,24 @@ $(window).on("scroll",function(e){
        
        
     }else{
-        document.querySelectorAll(".gtt").forEach(ele=>{
+        document.querySelectorAll(".gtt").forEach((ele,id)=>{
             ele.style.zIndex ="2"
+            
         })
-        
+        document.querySelectorAll(".gtt").forEach((ele,id)=>{
+            ele.style.top = "-"+(valueS)/(10*id)+ "px"
+        })
+        // [Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
+
         
     }
     
-    length=document.querySelectorAll(".gtt").length
-    document.querySelectorAll(".gtt")[Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
+   
     
 })
 
 document.querySelectorAll(".gtt").forEach(ele=>{
-    ele.style.left = Math.random()*50 + "px"
-    ele.style.top = Math.random()*(200-35) + 35 + "px"
+    ele.style.left = Math.random()*100 + "px"
+    ele.style.top = Math.random()*(200-15) + 15 + "px"
 })
 

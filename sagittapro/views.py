@@ -1,10 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
+from .forms import *
+from django.shortcuts import redirect
 # Create your views here.
+
 
 def main(request):
     context={"title":"Acceuil"}
+    print(request.GET["newsletter"])
     return render(request,"pages/main.html",context)
 
 
@@ -18,7 +22,18 @@ def page(request):
     return render(request,"pages/page.html",context)
 
 def contact(request):
-    context={"title":"contact"}
+
+    if request.method != "POST":
+        form=ContactUsForm()
+        
+    else:
+        print(request.GET["newsletter"])
+        form=ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("main")
+            
+    context={"title":"contact","form":form}
     return render(request,"pages/contact.html",context)
 
 
