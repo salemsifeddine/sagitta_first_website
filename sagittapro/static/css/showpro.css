@@ -37,7 +37,7 @@
   }
   
   .container {
-   
+   width: 100%;
     border-radius: 4px;
     max-height: 680px;
    
@@ -237,7 +237,7 @@
   .button-wrapper {
     position: absolute;
     right: 30px;
-    bottom: 20px;
+    bottom: 100px;
     z-index: 1;
     display: flex;
     align-items: center;
