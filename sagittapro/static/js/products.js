@@ -57,16 +57,18 @@ document.querySelector(".product-description--block-close").addEventListener("cl
 var productsClickable=document.querySelectorAll(".with-click")
 
 productsClickable.forEach(ele=>{
+    colorrandom=["rgba(205, 178, 142, 0.93)","rgba(90, 76, 129, 0.93)",
+    "rgba(163, 130, 255, 0.93)","rgba(240, 234, 255, 0.93)","rgba(54, 195, 149, 0.93)",
+    "rgba(220, 133, 119, 0.93)","rgba(193, 45, 114, 0.93)"]
     ele.addEventListener("click",function(){
         var srcimgtarget=ele.children[1].children[0].src
+        var productName= ele.children[1].children[1].textContent
+        document.querySelector(".overlay").style.backgroundColor=colorrandom[Math.floor(Math.random()*colorrandom.length)];
+
         document.querySelector(".image1").src = srcimgtarget
         document.querySelector(".image2").src = srcimgtarget
+        document.querySelector(".product-title").textContent = productName
     })
 })
 
 
-document.getElementById("overlay").addEventListener("click",function(e){
-    e.preventDefault();
-    e.stopPropagation()
-    console.log("d")
-})
