@@ -19,7 +19,7 @@
             <ul class="desktop-menu only-desktop">
                <li><a class=" js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
                <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
-               <li><a class="js-event-cta" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contactez-Nous</a></li>
+               <li><a class="js-event-cta" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contact</a></li>
                <li><a class="js-event-cta" href="/about" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">A propos</a></li>
                <li><a class="js-event-cta faqanchor" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
             </ul>
@@ -40,7 +40,7 @@
         <div class="main-contact">
     
             <div class="text-contact">
-                <h2 id="citation">Contact Us</h2>
+                <h2 id="citation">Contactez-nous</h2>
             </div>
             <div class="img-contact">
                 <img src="{% static 'images/1.jpg' %}" alt="">
@@ -61,7 +61,7 @@
 
 <section class="contact-section">
 
-    <h3>Let's Start a Conversation</h3>
+    <h3>Commençons une conversation</h3>
 
   
 	
@@ -84,28 +84,28 @@
             <div class="contact-right-side">
 
                 <div class="wrapper">
-                    <h2>Contact Us</h2>
+                    <h2>Contact</h2>
                     <form method="post">
                       {% csrf_token %}
                       <div class="input-box">
                         <label class="custom-field one">
                             {{form.first_name}}
                          
-                          <span class="placeholder">First Name</span>
+                          <span class="placeholder">Nom</span>
                         </label>
                       </div>
                       <div class="input-box">
                         <label class="custom-field one">
                           {{form.last_name}}
                          
-                          <span class="placeholder">Last Name</span>
+                          <span class="placeholder">prénom</span>
                         </label>
                       </div>
                       <div class="input-box">
                         <label class="custom-field one">
                             {{form.email}}
                 
-                          <span class="placeholder">Enter your email</span>
+                          <span class="placeholder">Enter votre email</span>
                         </label>
                         <!-- <input type="text" placeholder="Enter your email" required> -->
                       </div>
@@ -114,7 +114,7 @@
                         <label class="custom-field one">
                     
                             {{form.subject}}
-                          <span class="placeholder">Subject</span>
+                          <span class="placeholder">objet</span>
                         </label>
                       </div>
                      

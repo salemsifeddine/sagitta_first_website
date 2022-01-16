@@ -93,3 +93,17 @@ def faq(request):
 def about(request):
     context={"title":"A Propos"}
     return render(request,"pages/about.html",context)
+
+
+from django.http import JsonResponse
+import json
+
+def HotdealsApi(request):
+    data= json.loads(request.body.decode('utf-8'))
+    emailnsltrjs=data['newsletter']
+    
+    emailNsltr, created = NewsletterEmails.objects.get_or_create(email=emailnsltrjs)
+    
+  
+    
+    return JsonResponse("empty", safe=False)

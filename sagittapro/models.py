@@ -41,6 +41,8 @@ class Product(models.Model):
         return self.name
 class NewsletterEmails(models.Model):
     email = models.EmailField(blank=True, null=True)
+    def __str__(self):
+        return f"{self.email}"
 
 class FaQ(models.Model):
     question = models.CharField(max_length=255)
