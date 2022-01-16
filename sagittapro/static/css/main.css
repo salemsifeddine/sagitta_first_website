@@ -113,10 +113,6 @@ img {
   
 }
 
-.swiper-slide img {
-    width: 525px;
-    height: 525px;
-}
 header, hgroup, main, nav, section {
     display: block;
 }
@@ -876,4 +872,11 @@ z-index:3;
   width: 70%;
 margin: 30px;
 position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+	.cont{
+		display: none
+	}
 }

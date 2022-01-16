@@ -107,3 +107,6 @@ def HotdealsApi(request):
   
     
     return JsonResponse("empty", safe=False)
+
+def showpro(request):
+    return render(request,"pages/html.html")
