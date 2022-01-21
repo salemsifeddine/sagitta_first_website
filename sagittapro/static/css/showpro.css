@@ -344,18 +344,18 @@
     opacity: 1;
     transform: scale(1.6);
   }
-  
+/*   
   [data-sld="1"] .container,
-  [data-sld="1"] .header {
-    background-color: var(--savanna-bg);
+  [data-sld="1"] .header, body {
+    background-color: #e9bf8b ;
   }
   
   [data-sld="2"] .container,
-  [data-sld="2"] .header {
-    background-color: var(--glacier-bg);
+  [data-sld="2"] .header, body {
+    background-color: #b6d6c8 ;
   }
   
   [data-sld="3"] .container,
-  [data-sld="3"] .header {
-    background-color: var(--coral-bg);
-  }
+  [data-sld="3"] .header, body {
+    background-color: #e86357 ;
+  } */
