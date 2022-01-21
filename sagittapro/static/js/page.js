@@ -66,15 +66,15 @@ $(window).on("scroll",function(e){
     //  document.querySelector(".minutes-hand").style.transform="rotate(" + valueS/5 + "deg)"
 
     
-   
-    if($(this).scrollTop() >= 1900 ){
+  
+    if($(this).scrollTop() >= 1200 ){
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="absolute"
             document.querySelector(".cont").style.position="absolute"
         })
     }
 
-    if($(this).scrollTop() < 1900 ){
+    if($(this).scrollTop() < 1200 ){
         document.querySelector(".cont").style.position="fixed"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="fixed"
@@ -99,7 +99,11 @@ $(window).on("scroll",function(e){
             
         })
         document.querySelectorAll(".gtt").forEach((ele,id)=>{
-            ele.style.top = "-"+(valueS)/(10*id)+ "px"
+            idd=id+1
+            element=document.querySelector('.gtt[data-id="'+idd+'"]')
+            
+            
+            element.style.top = "-"+(valueS)/(10*id)+ "px"
         })
         // [Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
 
