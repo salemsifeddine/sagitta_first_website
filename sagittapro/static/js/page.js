@@ -66,15 +66,16 @@ $(window).on("scroll",function(e){
     //  document.querySelector(".minutes-hand").style.transform="rotate(" + valueS/5 + "deg)"
 
     
-  
-    if($(this).scrollTop() >= 1200 ){
+  console.log($(this).scrollTop())
+    if($(this).scrollTop() >= 1600 ){
+        document.querySelector(".cont").style.position="absolute"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="absolute"
-            document.querySelector(".cont").style.position="absolute"
+           
         })
     }
 
-    if($(this).scrollTop() < 1200 ){
+    if($(this).scrollTop() < 1600 ){
         document.querySelector(".cont").style.position="fixed"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="fixed"

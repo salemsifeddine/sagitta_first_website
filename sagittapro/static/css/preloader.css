@@ -1,4 +1,6 @@
-
+.preloader{
+  display:none
+}
 .preloader-cont{
 	width: 100%;
 	height: 100%;

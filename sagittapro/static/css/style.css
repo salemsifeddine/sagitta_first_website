@@ -95,14 +95,14 @@ ul {
   color: #AECD31;
 }
 
-.juice {
+/* .juice {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
-}
+} */
 
-.juice img {
+.juice{
   animation: float 4s ease-in-out infinite;
   max-height: 470px;
 }
