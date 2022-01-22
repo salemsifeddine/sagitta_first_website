@@ -1,3 +1,6 @@
+body{
+    background-color:#b6d6c8
+}
 .row {
     display: -webkit-box;
     display: -ms-flexbox;

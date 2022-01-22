@@ -114,6 +114,43 @@ $(window).on("scroll",function(e){
 
         
     }
+    // 
+        var dataanile=[{
+            "left":7,
+            "bottom":75,
+            "rotate":65
+        },
+        {
+            "left":52,
+            "bottom":56,
+            "rotate":60
+        },
+        {
+            "left":91,
+            "bottom":30,
+            "rotate":52
+        },
+        {
+            "left":130,
+            "bottom":0,
+            "rotate":46
+        },
+        {
+            "left":160,
+            "bottom":-30,
+            "rotate":35
+        }
+    ]
+    if($(this).scrollTop() > 2600 && $(this).scrollTop() < 2800){
+        document.querySelectorAll(".imganime").forEach((ele,id)=>{
+            var left=dataanile[id]["left"]
+            var bottom=dataanile[id]["bottom"]
+            var rotate="rotate(-" + dataanile[id]["rotate"] + "deg)"
+        
+            $(ele).animate({"opacity":1,"bottom":bottom,"left":left},300*id)
+            $(ele).css("transform",rotate)
+        })
+    }
     
    
     
