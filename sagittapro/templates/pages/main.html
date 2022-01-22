@@ -24,7 +24,7 @@
     height:230px;  */
 }
 </style>
-<header id="header" class="header wrapper home" style="height:300vh;margin: 0;padding: 0;background:#5161ce;position: sticky;
+<header id="header" class="header wrapper home" style="height:360vh;margin: 0;padding: 0;background:#5161ce;
 top: 0;">
      <!-- <div class="header__top" style="padding:0px ;height: 80px;">
       
@@ -60,8 +60,8 @@ top: 0;">
      
    </div>-->
 
-   <div class="header__top" style="padding:10px ;height: 80px;position: sticky;
-   top: 0;z-index: 999999999999;">
+   <div class="header__top" style="padding:10px ;height: 80px;
+   top: 0;z-index: 999999999999;position: fixed;background-color: transparent;width:100%">
       <div class="header__top-logo">
          <a class="logo" href="/"><img alt="Belidelice" src="/static/images/logobely1.png"></a>
         </div>
@@ -323,21 +323,22 @@ top: 0;">
       })
   
     </script>
-  </header>
-{% endblock header %}
-
-{% block content %}
-  
-<div style="position: sticky; top: 100vh;">
-   
-   <div class="white-fill">
-      <img alt="" src="/static/images/twist-fill.png">
+     <div class="white-fill" style="top: calc(360vh - 230px);">
+      <img alt="" src="/static/images/twist-fill.png" height="100%">
       <div class="header__arrow-down" style="bottom: 30px;"> 
          <a href="#home">
             <img src="{% static 'images/arrow-down.png' %}" alt="arrow-down" width="62" height="62">
          </a>
          </div>
    </div>
+  </header>
+{% endblock header %}
+
+{% block content %}
+  
+<div >
+   
+  
    
    <div class="wrapper home" id="pageSelector">
             

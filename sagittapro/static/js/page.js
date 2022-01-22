@@ -66,9 +66,11 @@ $(window).on("scroll",function(e){
     //  document.querySelector(".minutes-hand").style.transform="rotate(" + valueS/5 + "deg)"
 
     
-  console.log($(this).scrollTop())
+
     if($(this).scrollTop() >= 1600 ){
         document.querySelector(".cont").style.position="absolute"
+        document.querySelector(".leaves").style.position="absolute"
+        document.querySelector(".header__top").style.background="#5161ce"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="absolute"
            
@@ -77,6 +79,8 @@ $(window).on("scroll",function(e){
 
     if($(this).scrollTop() < 1600 ){
         document.querySelector(".cont").style.position="fixed"
+        document.querySelector(".leaves").style.position="fixed"
+        document.querySelector(".header__top").style.background="transparent"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="fixed"
             
