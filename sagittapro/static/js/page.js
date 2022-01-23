@@ -152,9 +152,11 @@ $(window).on("scroll",function(e){
             
         })
         $(".bottomopcaityeffect").fadeIn(1000)
+        $(".splashimg").fadeIn(1000)
     }else
     if($(this).scrollTop() > 3101 || $(this).scrollTop() < 2400){
         $(".bottomopcaityeffect").fadeOut(500);
+        $(".splashimg").fadeOut(500);
         document.querySelectorAll(".imganime").forEach(ele=>{
            
 
