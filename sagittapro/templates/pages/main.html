@@ -121,20 +121,23 @@ top: 0;">
             <div class="leaves">
                <ul id="scene">
                  <li class="layer" data-depth="-.1">
-                   <img src="{% static 'images/cookie.png' %}" alt="">
+                   <img src="{% static 'images/cookiehalf2.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth="-.3">
-                   <img src="{% static 'images/cookie.png' %}" alt="">
+                   <img src="{% static 'images/cookiehalf.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth="-1.5">
-                   <img src="{% static 'images/cookie.png' %}" alt="">
+                   <img src="{% static 'images/relcookie.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth=".1">
-                   <img src="{% static 'images/face2.png' %}" alt="">
+                   <img src="{% static 'images/cookie.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth=".3">
                    <img src="{% static 'images/face2.png' %}" alt="">
                  </li>
+                 <li class="layer" data-depth=".6">
+                  <img src="{% static 'images/face.png' %}" alt="">
+                </li>
                </ul>
              </div>
           
@@ -280,6 +283,13 @@ top: 0;">
         y: -800,
         ease: Expo.easeInOut
       })
+
+      TweenMax.from(".leaves .layer:nth-child(6)", 2, {
+        delay: 2.7,
+        opacity: 0,
+        y: -800,
+        ease: Expo.easeInOut
+      })
   
       TweenMax.from(".title", 1, {
         delay: 1,
@@ -404,7 +414,18 @@ top: 0;">
   <!--  -->
    <div class="animateddiv">
 
-
+         <div class="circleanime">
+            <div class="beliedelicelogo">
+               <img src="{% static 'images/logobely1.png' %}" alt="">
+            </div>
+               <div class="circleanimechild">
+                  <div class="cursive">
+                     <h3>Why not try out our</h3>
+                     <h1>mix pack</h1>
+                  </div>
+               </div>
+         </div>
+      
       <div class="animatedimages">
          <div class="imganime">
             <img src="{% static 'images/beli.png' %}" alt="">
@@ -421,6 +442,10 @@ top: 0;">
          <div class="imganime">
             <img src="{% static 'images/beli.png' %}" alt="">
          </div>
+      </div>
+
+      <div class="bottomopcaityeffect">
+         <img src="{% static 'images/choco1.png' %}" alt="">
       </div>
    </div>
    <!--  -->

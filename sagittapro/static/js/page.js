@@ -141,7 +141,7 @@ $(window).on("scroll",function(e){
             "rotate":35
         }
     ]
-    if($(this).scrollTop() > 2600 && $(this).scrollTop() < 2800){
+    if($(this).scrollTop() > 2600 && $(this).scrollTop() < 3100){
         document.querySelectorAll(".imganime").forEach((ele,id)=>{
             var left=dataanile[id]["left"]
             var bottom=dataanile[id]["bottom"]
@@ -149,7 +149,25 @@ $(window).on("scroll",function(e){
         
             $(ele).animate({"opacity":1,"bottom":bottom,"left":left},300*id)
             $(ele).css("transform",rotate)
+            
         })
+        $(".bottomopcaityeffect").fadeIn(1000)
+    }else
+    if($(this).scrollTop() > 3101 || $(this).scrollTop() < 2400){
+        $(".bottomopcaityeffect").fadeOut(500);
+        document.querySelectorAll(".imganime").forEach(ele=>{
+           
+
+            ele.style.bottom=0;
+            ele.style.left=0;
+            ele.style.opacity=0;
+        
+            
+            
+        })
+
+
+        
     }
     
    

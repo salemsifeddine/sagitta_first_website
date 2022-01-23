@@ -158,7 +158,10 @@ ul {
   top: 200px !important;
   left: -320px !important;
 }
-
+.leaves .layer:nth-child(6) {
+  top: 40px !important;
+  left: -480px !important;
+}
 .arrows .prev {
   position: absolute;
   top: 50%;
