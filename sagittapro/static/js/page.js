@@ -2,6 +2,8 @@
 $(window).on("scroll",function(e){
     var valueS = $(this).scrollTop() 
     
+
+    console.log(valueS)
     length=document.querySelectorAll(".gtt").length
     // switch (Math.ceil(valueS/360)) {
         

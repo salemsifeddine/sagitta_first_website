@@ -10,5 +10,5 @@ urlpatterns = [
     path('page/', views.page, name="page"),
     path('contact/', views.contact, name="contact"),
     path("hotdeals/", views.HotdealsApi),
-    path("showpro/",views.showpro,name="showpro")
+    path("showpro/",views.showpro,name="showpro"),
 ]

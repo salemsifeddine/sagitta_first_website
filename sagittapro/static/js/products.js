@@ -1,3 +1,6 @@
+
+
+
 var gridItems= document.querySelectorAll('.grid-item--product');
 
 
@@ -72,3 +75,37 @@ productsClickable.forEach(ele=>{
 })
 
 
+
+
+
+// 
+$(window).on("scroll",function(e){
+    var valueS = $(this).scrollTop() 
+    
+    // if(valueS > 150 && valueS <290){
+        
+    //     $(".animatedpaperpart1").animate({"width":100+'%'},1300);
+
+       
+    //     setTimeout(() => {
+    //         document.querySelectorAll(".productone").forEach((ele,index)=>{
+    //             $(ele).animate({"left":720},1000/index)
+    //         })
+    //     }, 1000);
+    // }
+
+    if(valueS >= 150){
+        
+        
+        $(".animatedpaperpart1").animate({"width":100+'%'},1300);
+        
+        
+            document.querySelectorAll(".productone").forEach((ele,index)=>{
+                rndm=Math.floor(Math.random()*80)
+                $(ele).css("left",valueS+rndm)
+            })
+        
+    }
+
+
+})
