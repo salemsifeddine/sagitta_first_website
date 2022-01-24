@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="{% static 'css/faq.css' %}">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
   <style>
 
 	  :root {
@@ -149,6 +150,28 @@ body{
       
    </div>
    <div class="header__banner">
+    <div class="leaves" style="position: fixed;">
+      <ul id="scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; position: relative; pointer-events: none;">
+        <li class="layer" data-depth="-.1" style="transform: translate3d(-8px, 1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px; opacity: 1;">
+          <img src="/static/images/cookiehalf2.png" alt="">
+        </li>
+        <li class="layer" data-depth="-.3" style="transform: translate3d(-24.1px, 2.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px; opacity: 1;">
+          <img src="/static/images/cookiehalf.png" alt="">
+        </li>
+        <li class="layer" data-depth="-1.5" style="transform: translate3d(-120.4px, 14.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px; opacity: 1;">
+          <img src="/static/images/relcookie.png" alt="">
+        </li>
+        <li class="layer" data-depth=".1" style="transform: translate3d(8px, -1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px; opacity: 1;">
+          <img src="/static/images/face.png" alt="">
+        </li>
+        <li class="layer" data-depth=".3" style="transform: translate3d(24.1px, -2.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px; opacity: 1;">
+          <img src="/static/images/face2.png" alt="">
+        </li>
+        <li class="layer" data-depth=".6" style="transform: translate3d(48.2px, -5.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px; opacity: 1;">
+         <img src="/static/images/cookie.png" alt="">
+       </li>
+      </ul>
+    <div></div></div>
 	<div id="citation" >
 		<p style="text-align: center;">FaQ!</p>
     <div class="img-int" style="width: 100px;height:190px;margin:auto">
@@ -407,3 +430,8 @@ close_btn.addEventListener('click', () => {
 </script> -->
 
 {% endblock content %}
+
+{% block js %}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="{% static 'js/tweenanime.js' %}"></script>
+{% endblock js %}

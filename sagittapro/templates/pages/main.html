@@ -12,9 +12,6 @@
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
 <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script> -->
 <link rel="stylesheet" href="{% static 'css/nav.css' %}">  
-
-{% endblock head %}
-{% block header %}
 <style>
    .white-fill{
     width: 100%;
@@ -22,8 +19,12 @@
     /* left: 0;
     bottom:-70px;
     height:230px;  */
+    z-index:3;
 }
 </style>
+{% endblock head %}
+{% block header %}
+
 <header id="header" class="header wrapper home" style="height:360vh;margin: 0;padding: 0;background:#5161ce;
 top: 0;">
      <!-- <div class="header__top" style="padding:0px ;height: 80px;">
@@ -130,13 +131,13 @@ top: 0;">
                    <img src="{% static 'images/relcookie.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth=".1">
-                   <img src="{% static 'images/cookie.png' %}" alt="">
+                   <img src="{% static 'images/face.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth=".3">
                    <img src="{% static 'images/face2.png' %}" alt="">
                  </li>
                  <li class="layer" data-depth=".6">
-                  <img src="{% static 'images/face.png' %}" alt="">
+                  <img src="{% static 'images/cookie.png' %}" alt="">
                 </li>
                </ul>
              </div>
@@ -147,46 +148,46 @@ top: 0;">
                <div class="btm"><img src="{% static 'images/yellow.png' %}" alt=""></div>
                <div class="random">
                    <div class="gtt" data-id="1">
-                       <img src="{% static 'images/cookie.png' %}" alt="">
+                       <img src="{% static 'images/relcookie.png' %}" alt="">
                    </div>
                    <div class="gtt" data-id="2">
-                     <img src="{% static 'images/cookie.png' %}" alt="">
+                     <img src="{% static 'images/relcookie.png' %}" alt="">
                  </div>
                  <div class="gtt" data-id="3">
-                  <img src="{% static 'images/cookie.png' %}" alt="">
+                  <img src="{% static 'images/relcookie.png' %}" alt="">
               </div>
               <div class="gtt" data-id="4">
-               <img src="{% static 'images/cookie.png' %}" alt="">
+               <img src="{% static 'images/relcookie.png' %}" alt="">
            </div>
                  <div class="gtt" data-id="5"> 
-                  <img src="{% static 'images/cookie.png' %}" alt="">
+                  <img src="{% static 'images/relcookie.png' %}" alt="">
               </div>
               <div class="gtt" data-id="6">
-               <img src="{% static 'images/cookie.png' %}" alt="">
+               <img src="{% static 'images/relcookie.png' %}" alt="">
            </div>
                    <div class="gtt" data-id="7">
-                     <img src="{% static 'images/cookie.png' %}" alt="">
+                     <img src="{% static 'images/relcookie.png' %}" alt="">
                  </div>
                  <div class="gtt" data-id="8">
-                  <img src="{% static 'images/cookie.png' %}" alt="">
+                  <img src="{% static 'images/relcookie.png' %}" alt="">
               </div>
               <div class="gtt" data-id="9">
-               <img src="{% static 'images/cookie.png' %}" alt="">
+               <img src="{% static 'images/relcookie.png' %}" alt="">
            </div>
                    <div class="gtt" data-id="10">
-                     <img src="{% static 'images/cookie.png' %}" alt="">
+                     <img src="{% static 'images/relcookie.png' %}" alt="">
                  </div>
                   <div class="gtt" data-id="11">
-                       <img src="{% static 'images/cookie.png' %}" alt="">
+                       <img src="{% static 'images/relcookie.png' %}" alt="">
                   </div>
                   <div class="gtt" data-id="12">
-                     <img src="{% static 'images/cookie.png' %}" alt="">
+                     <img src="{% static 'images/relcookie.png' %}" alt="">
                   </div>
                    <div class="gtt" data-id="13">
                        <img src="{% static 'images/cookie.png' %}" alt="">
                    </div>
                    <div class="gtt" data-id="14">
-                       <img src="{% static 'images/cookie.png' %}" alt="">
+                       <img src="{% static 'images/relcookie.png' %}" alt="">
                    </div>
                    <div class="gtt" data-id="15">
                        <img src="{% static 'images/cookie.png' %}" alt="">
@@ -204,135 +205,7 @@ top: 0;">
   
   
     </div>
-    <script>
-
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-  
-      TweenMax.from(".logo", 1, {
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.staggerFrom(".menu-links ul li", 1, {
-        opacity: 0,
-        x: -20,
-        ease: Power3.easeInOut
-      }, 0.08)
-  
-      TweenMax.from(".search", 1, {
-        delay: .5,
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".account", 1, {
-        delay: .6,
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".cart", 1, {
-        delay: .7,
-        opacity: 0,
-        x: -20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".juice", 1, {
-        delay: 2,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".leaves .layer:nth-child(1)", 2, {
-        delay: 2,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".leaves .layer:nth-child(2)", 2, {
-        delay: 2.1,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".leaves .layer:nth-child(3)", 2, {
-        delay: 2.2,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".leaves .layer:nth-child(4)", 2, {
-        delay: 2.3,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".leaves .layer:nth-child(5)", 2, {
-        delay: 2.5,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-
-      TweenMax.from(".leaves .layer:nth-child(6)", 2, {
-        delay: 2.7,
-        opacity: 0,
-        y: -800,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".title", 1, {
-        delay: 1,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".tagline", 1, {
-        delay: 1.3,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".pages", 1, {
-        delay: 1.3,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".more", 1, {
-        delay: 1.4,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".desc", 1, {
-        delay: 1.4,
-        opacity: 0,
-        y: 20,
-        ease: Expo.easeInOut
-      })
-  
-      TweenMax.from(".arrows", 1, {
-        delay: 2,
-        opacity: 0,
-        ease: Expo.easeInOut
-      })
-  
-    </script>
+    
      <div class="white-fill" style="top: calc(360vh - 230px);">
       <img alt="" src="/static/images/twist-fill.png" height="100%">
       <div class="header__arrow-down" style="bottom: 30px;"> 
@@ -353,7 +226,7 @@ top: 0;">
    <div class="wrapper home" id="pageSelector">
             
       <div class="row">
-         <div class="col-lg-12 hero-text mobile-hero-text">
+         <div class="col-lg-12 hero-text mobile-hero-text" style="position: static; z-index: 9;">
             <h1 class="hovercursor" style="text-align: center;">Découvrez le monde merveilleux de Beliedelice </h1>
          </div>
       </div>
@@ -529,4 +402,5 @@ top: 0;">
 
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <script src="{% static 'js/page.js' %}"></script>
+   <script src="{% static 'js/tweenanime.js' %}"></script>
 {% endblock js %}
