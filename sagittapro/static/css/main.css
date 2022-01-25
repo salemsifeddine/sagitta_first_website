@@ -915,10 +915,11 @@ position: relative;
 .bottomopcaityeffect{
   position: absolute;
   bottom: 35px;
-  left: 80px;
+  left: -180px;
   width: 200px;
   height:100px;
   display: none;
+  transition: left .6s ease-out;
 }
 .bottomopcaityeffect img{
   width:200px;

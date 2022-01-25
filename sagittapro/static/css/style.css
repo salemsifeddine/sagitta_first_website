@@ -145,7 +145,7 @@ ul {
 }
 
 .leaves .layer:nth-child(3) {
-  top: -300px !important;
+  top: -210px !important;
   left: 160px !important;
 }
 
@@ -155,8 +155,8 @@ ul {
 }
 
 .leaves .layer:nth-child(5) {
-  top: 200px !important;
-  left: -320px !important;
+  top: 100px !important;
+  left: -230px !important;
 }
 .leaves .layer:nth-child(6) {
   top: 40px !important;
