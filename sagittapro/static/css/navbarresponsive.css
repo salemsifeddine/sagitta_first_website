@@ -1,0 +1,192 @@
+.hidden {
+    display: none;
+  }
+  .hdr{
+    background: #f7cc4e;
+  }
+  
+  .hdr .navbar {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    margin: 0 auto;
+  }
+  .hdr .navbar .brand {
+    font-family: inherit;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: inherit;
+    text-transform: uppercase;
+    color: #252a32;
+  }
+  .hdr .navbar .menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+      flex-basis: 0%;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  .hdr .navbar .menu-item:not(:first-child) {
+    margin-left: 2rem;
+  }
+  .hdr .navbar .menu-item a {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: inherit;
+    color: #252a32;
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hdr .navbar {
+      padding: 1rem 2rem;
+      margin: 0 auto;
+    }
+    .hdr .navbar .wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0;
+      background: #f1f5f8;
+      transition: all 0.3s ease;
+    }
+    .hdr .navbar .wrapper .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 25%;
+      width: 100%;
+      transform: translateY(-50%);
+      padding-top: 170px;
+    }
+    .hdr .navbar .wrapper .menu-item {
+      padding-bottom: 1rem;
+      width: 100%;
+      text-align: left;
+    }
+    .hdr .navbar .wrapper .menu-item:nth-child(1) a {
+      transition-delay: 0.2s;
+    }
+    .hdr .navbar .wrapper .menu-item:nth-child(2) a {
+      transition-delay: 0.3s;
+    }
+    .hdr .navbar .wrapper .menu-item:nth-child(3) a {
+      transition-delay: 0.4s;
+    }
+    .hdr .navbar .wrapper .menu-item:nth-child(4) a {
+      transition-delay: 0.5s;
+    }
+    .hdr .navbar .wrapper .menu-item:not(:first-child) {
+      margin-left: 0;
+    }
+    .hdr .navbar .wrapper .menu-item a {
+      padding: 1rem 2rem;
+      opacity: 0;
+      color: #252a32;
+      font-size: 1rem;
+      font-weight: 600;
+      transform: translateX(-20px);
+      transition: all 0.3s ease-in-out;
+    }
+    .hdr .navbar .nav-toggle {
+      display: block;
+      position: fixed;
+      right: 1rem;
+      top: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      z-index: 999;
+    }
+    .hdr .navbar .nav-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: #252a32;
+      border-radius: 2px;
+      margin-left: 14px;
+    }
+    .hdr .navbar .nav-toggle span:nth-child(1) {
+      margin-top: 16px;
+    }
+    .hdr .navbar .nav-toggle span:nth-child(2) {
+      margin-top: 4px;
+      opacity: 1;
+    }
+    .hdr .navbar .nav-toggle span:nth-child(3) {
+      margin-top: 4px;
+    }
+    .hdr .navbar #nav:checked + .nav-toggle {
+      transform: rotate(45deg);
+    }
+    .hdr .navbar #nav:checked + .nav-toggle span {
+      background: #252a32;
+      transition: transform 0.5s ease;
+    }
+    .hdr .navbar #nav:checked + .nav-toggle span:nth-child(1) {
+      transform: translateY(6px) rotate(180deg);
+    }
+    .hdr .navbar #nav:checked + .nav-toggle span:nth-child(2) {
+      opacity: 0;
+    }
+    .hdr .navbar #nav:checked + .nav-toggle span:nth-child(3) {
+      transform: translateY(-6px) rotate(90deg);
+    }
+    .hdr .navbar #nav:checked ~ .wrapper {
+      z-index: 99;
+      opacity: 1;
+    }
+    .hdr .navbar #nav:checked ~ .wrapper .menu-item a {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .menu   li a{
+    font-size: 22px;
+  }
+  a:focus, a:hover{
+      text-decoration: none;
+  }
+  .menu li a{
+      color: #000;
+  }
+  .menu li a:hover{
+    
+        color: #1064ad;
+        border-top: 2px solid #1064ad;
+     
+  }
+  .brand img{
+    
+    width: 55px;
+    height: 45px;
+    margin-left: 10px;
+ 
+  }
+
+  .brand{
+    display: flex;
+  }
+  .menu li{
+    padding: 7px 10px;
+  }
+  .menu li a{
+    color: #FFF;
+    letter-spacing: 0;
+    font-size: 30px;
+  }

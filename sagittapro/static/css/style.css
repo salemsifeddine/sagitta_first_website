@@ -130,7 +130,7 @@ ul {
 }
 
 .leaves img {
-  max-width: 100px;
+  max-width: 70px;
   max-height: 100px;
 }
 
@@ -189,3 +189,53 @@ ul {
 
 
 
+
+@media screen and (max-width:800px) {
+	.inline{
+		flex-direction: column;
+		
+	}
+	.card__content{
+		padding: 7em 4em !important;
+	}
+	.card__title {
+		font-size: 2rem !important;
+	}
+	.card__body{
+		font-size:1rem !important;
+	}
+	.cardwithbackg{
+		margin-bottom: 5px;
+	}
+	.white-fill{
+		bottom: -160px
+	}
+	.leaves img {
+		max-width: 45px !important;
+		 
+	  }
+
+	  .leaves .layer:nth-child(1) {
+	 
+		left: -180 !important;
+	  }
+	  .leaves .layer:nth-child(2) {
+	 
+		left: 70px !important;
+	  }
+    .leaves .layer:nth-child(3) {
+      top: -210px !important;
+      left: 122px !important;
+    }
+	  .leaves .layer:nth-child(4){
+		  left:122px !important;
+	  }
+	  .leaves .layer:nth-child(5) {
+		top: 64px !important;
+		left: -193px !important;
+	  }
+	  .leaves .layer:nth-child(6) {
+      top: 130px !important;
+      left: -60px !important;
+    }
+}
