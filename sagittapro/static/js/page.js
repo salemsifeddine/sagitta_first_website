@@ -72,7 +72,7 @@ $(window).on("scroll",function(e){
     if($(this).scrollTop() >= 1600 ){
         document.querySelector(".cont").style.position="absolute"
         document.querySelector(".leaves").style.position="absolute"
-        document.querySelector(".header__top").style.background="#5161ce"
+        document.querySelector(".hdr").style.background="#5161ce"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="absolute"
            
@@ -82,7 +82,7 @@ $(window).on("scroll",function(e){
     if($(this).scrollTop() < 1600 ){
         document.querySelector(".cont").style.position="fixed"
         document.querySelector(".leaves").style.position="fixed"
-        document.querySelector(".header__top").style.background="transparent"
+        document.querySelector(".hdr").style.background="transparent"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
             ele.style.position="fixed"
             
@@ -94,8 +94,11 @@ $(window).on("scroll",function(e){
 
     if( valueS/20 <= 31.2){
         document.querySelector(".top").style.transform ="rotate(-"+ valueS/20 + "deg)"
-        if( valueS/5 >=42){
+        if( valueS/5 >=42 && window.outerWidth > 800){
             document.querySelector(".top").style.left ="-" + valueS/5
+        } 
+        if( valueS/5 >=42 && window.outerWidth < 800){
+            document.querySelector(".top").style.left ="-" + valueS/15
         }
         
        
@@ -182,7 +185,14 @@ $(window).on("scroll",function(e){
 })
 
 document.querySelectorAll(".gtt").forEach(ele=>{
-    ele.style.left = Math.random()*100 + "px"
-    ele.style.top = Math.random()*(200-15) + 15 + "px"
+     
+    if(window.outerWidth < 800){
+        ele.style.left = Math.random()*32 + "px"
+        ele.style.top = Math.random()*(200-105) + 15 + "px"
+    }else{
+        ele.style.left = Math.random()*100 + "px"
+        ele.style.top = Math.random()*(200-15) + 15 + "px"
+    }
+    
 })
 

@@ -605,3 +605,10 @@ a:focus {
 	cursor: pointer;
 }
 
+
+@media screen and (max-width:800px) {
+	 
+	.white-fill{
+		bottom: -163px
+	}
+}

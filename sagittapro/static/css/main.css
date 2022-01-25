@@ -875,11 +875,11 @@ position: relative;
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 	.cont{
 		display: none
 	}
-}
+} */
 
 .animateddiv{
   width:100%;
@@ -1001,4 +1001,42 @@ position: relative;
 .splashimg img{
   width: 100%;
   height: 100%;
+}
+
+
+@media screen and (max-width:800px) {
+  .cont{
+    height: 100px;
+    width: 100px;
+    top: 180px;
+  }
+  .gtt{
+    width:30px;
+    height:30px;
+  }
+  .top{
+    left: -15px;
+    top: 38px;
+  
+  height: 55px;
+  }
+}
+
+/* grid */
+@media screen and (max-width:800px) {
+  .cont{
+    height: 100px;
+    width: 100px;
+    top: 180px;
+  }
+  .gtt{
+    width:30px;
+    height:30px;
+  }
+  .top{
+    left: -15px;
+    top: 38px;
+  
+  height: 55px;
+  }
 }

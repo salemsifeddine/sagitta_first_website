@@ -53,27 +53,28 @@ var csrftoken = getToken('csrftoken')
 </head>
 <body id="scroll1">
    <main>
+    <header class="hdr" >
+        <nav class="navbar" >
+          <a class="brand" href="#">Beliedelice <img src="{% static 'images/logobely1.png' %}" alt=""></a>
+          <input type="checkbox" id="nav" class="hidden">
+          <label for="nav" class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+           </label>
+          <div class="wrapper1" style="padding: 0;  ">
+            <ul class="  menu ">
+                     <li><a class=" js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
+                     <li><a class="  js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
+                     <li><a class="  js-event-cta" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contact</a></li>
+                     <li><a class="  js-event-cta" href="/about" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">A propos</a></li>
+                     <li><a class="  js-event-cta faqanchor" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <section class="section1">
-        <header class="hdr">
-            <nav class="navbar">
-              <a class="brand" href="#">Beliedelice <img src="{% static 'images/logobely1.png' %}" alt=""></a>
-              <input type="checkbox" id="nav" class="hidden">
-              <label for="nav" class="nav-toggle">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-               </label>
-              <div class="wrapper" style="padding: 0;margin: 0;box-shadow: none;background-color: transparent;">
-                <ul class="  menu ">
-                         <li><a class=" js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
-                         <li><a class="js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
-                         <li><a class="js-event-cta" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contact</a></li>
-                         <li><a class="js-event-cta" href="/about" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">A propos</a></li>
-                         <li><a class="js-event-cta faqanchor" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
-                </ul>
-              </div>
-            </nav>
-          </header>
+       
          {% block header %}
            
          {% endblock header %}

@@ -306,3 +306,15 @@ table{
    
 }
 
+/*  */
+
+
+@media screen and (max-width:800px){
+    .main-title{
+        font-size: 30px;
+    }
+    .main-subtitle{
+        font-size: 22px
+    }
+}
+
