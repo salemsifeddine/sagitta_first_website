@@ -31,3 +31,15 @@ width: 100%;
 .row div {
 padding-top: 20px;
 }
+
+/*  */
+
+@media screen and (max-width:800px){
+    #citation p{
+		font-size:45px
+	}
+	#citation div{
+		width: 300px !important;
+		height: 170px !important;
+	}
+}
