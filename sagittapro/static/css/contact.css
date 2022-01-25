@@ -154,3 +154,13 @@ textarea{
     padding: 10px 21px;
 }
 
+
+
+@media screen and (max-width:800px){
+    .contact-right-side{
+        padding: 0;
+    }
+    .wrapper{
+        padding: 11px !important
+    }
+}
