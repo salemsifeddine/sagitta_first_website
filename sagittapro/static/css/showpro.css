@@ -378,4 +378,21 @@
       left: 51.4727%;
       top: 0px;
     }
+     
+    
+  }
+
+  .grid grid-golden{
+    display: block !important;
+
+  }
+
+  .grid-item{
+    position: relative !important;
+    left: unset !important;
+    top: unset !important;
+    float: left !important;
+  }
+  .grid-item:last-of-type{
+    border-right: 1 px solid black;
   }
