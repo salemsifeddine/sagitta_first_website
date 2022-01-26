@@ -1041,7 +1041,8 @@ position: relative;
   }
   .circleanime{
     position: absolute;
-    left: 200px;
+    
+    left: 40% !important;
     width:240px;
     height:240px;
     bottom: 80px !important;
