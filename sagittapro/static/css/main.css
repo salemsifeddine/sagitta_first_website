@@ -544,6 +544,7 @@ figure.effect-apollo {
 }
 .home .grid-item--default:not(.grid-item--product) img {
     height: 100%;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -1123,11 +1124,13 @@ position: relative;
   }
    .home .grid-text {
     font-size: 10px;
-    width: 48% !important;
+    width: 53% !important;
     height: 96px !important;
     top: 383px !important;
-    padding-top: 10px !important;
+    padding-top: 25px !important;
     left: 48% !important;
+    align-items: center;
+    align-content: center;
    }
    .home .grid-text:not(.decouvrezpro){
     
