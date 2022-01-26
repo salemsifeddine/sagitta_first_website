@@ -1131,6 +1131,7 @@ position: relative;
     left: 48% !important;
     align-items: center;
     align-content: center;
+    text-align: center;
    }
    .home .grid-text:not(.decouvrezpro){
     
