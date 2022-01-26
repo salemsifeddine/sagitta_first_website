@@ -163,4 +163,7 @@ textarea{
     .wrapper{
         padding: 11px !important
     }
+    #citation{
+        font-size:3em
+    }
 }
