@@ -359,3 +359,23 @@
   [data-sld="3"] .header, body {
     background-color: #e86357 ;
   } */
+
+
+  @media screen and (max-width:800px) {
+    .left-side{
+      padding-left: 0px !important;
+
+    }
+    .header__arrow-down {
+      bottom: -20px !important;
+    }
+    .products .grid-text--product {
+      height: 170px !important;
+    }
+    .products .grid-item-width-2, .products .grid-sizer-width-2 {
+      width: 48.5%;
+      position: absolute;
+      left: 51.4727%;
+      top: 0px;
+    }
+  }
