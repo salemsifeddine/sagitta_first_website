@@ -1125,7 +1125,7 @@ position: relative;
     font-size: 10px;
     width: 48% !important;
     height: 96px !important;
-    top: 288px !important;
+    top: 383px !important;
     padding-top: 10px !important;
     left: 48% !important;
    }
@@ -1138,29 +1138,32 @@ position: relative;
   }
   .grid-item--blue{
     left: 0 !important;
-    top: 96px !important;
+    top: 192px !important;
     
   }
   .yellowprod{
-    left:48% !important
+    left:0% !important
   }
-  .handgat{
-    left: 0 !important;
-    top: 192px !important;
-  }
+  
   .grid-item{
-    width:48% !important;
+    width:100% !important;
   }
   .grid-item-height-2.grid-item--blueNavy.grid-item--product{
-    left: 48% !important;
-    top: 192px !important;
+    left: 0% !important;
+    top: 288px !important;
   }
 
   .grid-item.cadre{
     left: 48% !important;
     top: 96px !important;
-    width:102px;
+    width:48%;
     height: 96px !important;
+  
+  }
+  .handgat{
+    left: 0 !important;
+    top: 96 !important;
+    width: 48% !important;
   }
   .home .grid-item--product img {
     max-width: 130px;
