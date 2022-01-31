@@ -619,7 +619,7 @@ figure.effect-apollo {
 }
 .home .grid-text {
     font-size: 24px;
-    padding: 20px 0;
+    padding: 10px 0;
     font-weight:bolder;
 }
 
@@ -1122,7 +1122,7 @@ position: relative;
     height: 96px !important;
     width: 48%
   }
-   .home .grid-text {
+   /* .home .grid-text {
     font-size: 10px;
     width: 53% !important;
     height: 96px !important;
@@ -1177,5 +1177,22 @@ position: relative;
   .yellowprod.imgnot a img{
     max-width: 60px !important;
     max-height: 70px !important;
+  } */
+  .grid{
+    display:inline 
   }
+  .home .grid-item--default {
+    height: 50vh !important;
+    width: 100% !important;
+  }
+  .home .grid-item, .home .grid-sizer{
+    width: 50%;
+    height:340px;
+    display:flex;
+    align-items: center;
+    top: 0% !important;
+    margin: 0 !important;
+    float: right !important;
+  }
+   
 }
