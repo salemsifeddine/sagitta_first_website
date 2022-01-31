@@ -46,4 +46,10 @@ padding-top: 20px;
         text-align: center;
         width: 100% !important;
     }
+    #citation{
+        padding-top: 55px !important;
+    }
+    #citation div{
+        margin-top: 30px !important;
+    }
 }

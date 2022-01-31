@@ -308,3 +308,10 @@
 
 
 
+
+
+@media screen and (max-width: 480px){
+	.img-int{
+		margin-top: 65px !important;
+	}
+}
