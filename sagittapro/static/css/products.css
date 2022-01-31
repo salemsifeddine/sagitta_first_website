@@ -377,20 +377,27 @@ table{
       padding: 15px !important;
   }
   .product-image{
-    width: 100%;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
     height: 40vh;
     margin:auto
   }
   .product-description--block-image,.product-description--block-image-2{
-    width: 130px !important;
-    height: 130px !important;
+    width: 150px !important;
+    height: 15  0px !important;
     float: left;
-    border: 1px solid black;
+    
   }
   .product-description--block-image img,.product-description--block-image-2 img{
     width: 100% !important;
     height: 100% !important;
     
+  }
+  .product-content{
+      width: 100%;
+  }
+  table{
+      font-size:12px
   }
 }
 
