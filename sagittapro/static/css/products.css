@@ -372,5 +372,25 @@ table{
     max-width: 60px !important;
     max-height: 70px !important;
   } 
+  /* overlay */
+  .overlay{
+      padding: 15px !important;
+  }
+  .product-image{
+    width: 100%;
+    height: 40vh;
+    margin:auto
+  }
+  .product-description--block-image,.product-description--block-image-2{
+    width: 130px !important;
+    height: 130px !important;
+    float: left;
+    border: 1px solid black;
+  }
+  .product-description--block-image img,.product-description--block-image-2 img{
+    width: 100% !important;
+    height: 100% !important;
+    
+  }
 }
 
