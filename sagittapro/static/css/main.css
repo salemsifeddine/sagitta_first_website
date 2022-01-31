@@ -1122,62 +1122,7 @@ position: relative;
     height: 96px !important;
     width: 48%
   }
-   /* .home .grid-text {
-    font-size: 10px;
-    width: 53% !important;
-    height: 96px !important;
-    top: 383px !important;
-    padding-top: 25px !important;
-    left: 48% !important;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-   }
-   .home .grid-text:not(.decouvrezpro){
-    
-    left: 0% !important;
-   }
-  .grid-text.grid-padding-for-text-2lines {
-    height: 96px !important;
-  }
-  .grid-item--blue{
-    left: 0 !important;
-    top: 192px !important;
-    
-  }
-  .yellowprod{
-    left:0% !important
-  }
   
-  .grid-item{
-    width:100% !important;
-  }
-  .grid-item-height-2.grid-item--blueNavy.grid-item--product{
-    left: 0% !important;
-    top: 288px !important;
-  }
-
-  .grid-item.cadre{
-    left: 48% !important;
-    top: 96px !important;
-    width:48%;
-    height: 96px !important;
-  
-  }
-  .handgat{
-    left: 0 !important;
-    top: 96 !important;
-    width: 48% !important;
-  }
-  .home .grid-item--product img {
-    max-width: 130px;
-    max-height: 50px;
-  }
-
-  .yellowprod.imgnot a img{
-    max-width: 60px !important;
-    max-height: 70px !important;
-  } */
   .grid{
     display:inline 
   }
