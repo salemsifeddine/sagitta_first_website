@@ -1194,5 +1194,10 @@ position: relative;
     margin: 0 !important;
     float: right !important;
   }
-   
+  .home .grid-text{
+    font-size:18px;
+  }
+   #header{
+     height:250vh
+   }
 }
