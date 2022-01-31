@@ -1197,7 +1197,7 @@ position: relative;
   .home .grid-text{
     font-size:18px;
   }
-  .header.wrapper.home{
+  .header.wrapper.home.main{
     height:220vh !important
   }
   
