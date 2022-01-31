@@ -190,7 +190,7 @@ header, hgroup, main, nav, section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 95vh;
+    top: 65vh;
     z-index:2;
     
 }
