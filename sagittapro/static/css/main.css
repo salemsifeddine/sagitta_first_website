@@ -35,7 +35,7 @@ main{
 }
 
 #citation {
-  
+  padding-top: 30px;
   font-size: 5em;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: tranparent;
@@ -190,7 +190,7 @@ header, hgroup, main, nav, section {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    bottom: -45px;
+    top: 95vh;
     z-index:2;
     
 }
@@ -1106,9 +1106,9 @@ position: relative;
     width: 40px;
     height: 47px;
   }
-  .header__arrow-down{
+  /* .header__arrow-down{
     bottom: 63px !important;
-  }
+  } */
   .wrapper{
     padding: 0;
   }
@@ -1196,6 +1196,9 @@ position: relative;
   }
   .home .grid-text{
     font-size:18px;
+  }
+  .header.wrapper.home{
+    height:220vh !important
   }
   
 }

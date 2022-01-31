@@ -69,7 +69,8 @@ $(window).on("scroll",function(e){
 
     
 
-    if($(this).scrollTop() >= 1600 ){
+   
+    if($(this).scrollTop() >= 2200 ){
         document.querySelector(".cont").style.position="absolute"
         document.querySelector(".leaves").style.position="absolute"
         // document.querySelector(".hdr").style.background="#5161ce"
@@ -79,15 +80,14 @@ $(window).on("scroll",function(e){
         })
     }
 
-    if($(this).scrollTop() < 1600 ){
+    if($(this).scrollTop() < 2200 ){
         document.querySelector(".cont").style.position="fixed"
         document.querySelector(".leaves").style.position="fixed"
         // document.querySelector(".hdr").style.background="transparent"
         document.querySelectorAll(".cookie-small").forEach(ele=>{
-            ele.style.position="fixed"
-            
-        })
+            ele.style.position="fixed" })
     }
+   
     
     
     
