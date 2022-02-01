@@ -228,7 +228,8 @@ ul {
       left: 50px !important;
     }
 	  .leaves .layer:nth-child(4){
-		  left:36px !important;
+		  left:186px !important;
+      top: 66px !important;
 	  }
 	  .leaves .layer:nth-child(5) {
 		top: 64px !important;
