@@ -4,6 +4,8 @@
 
 
 {% block head %}
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+
 <link rel="stylesheet" href="{% static 'css/style.css' %}">  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
@@ -267,7 +269,8 @@ top: 0;">
       
    </div>
   <!--  -->
-   <div class="animateddiv">
+  
+   <div class="animateddiv" data-aos="fade-right">
 
          <div class="circleanime">
             <div class="beliedelicelogo">
@@ -275,7 +278,7 @@ top: 0;">
             </div>
                <div class="circleanimechild">
                   <div class="cursive">
-                     <h3>Why not try out our</h3>
+                     <h3>Pourquoi ne pas essayer notre</h3>
                      <h1>mix pack</h1>
                   </div>
                </div>
@@ -305,7 +308,7 @@ top: 0;">
 
 
       <div class="splashanime">
-         <div class="splashimg">
+         <div class="splashimg" data-aos="fade-left">
             <img src="{%  static 'images/coffee.png' %}" alt="">
          </div>
       </div>
@@ -385,4 +388,10 @@ top: 0;">
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    <script src="{% static 'js/page.js' %}"></script>
    <script src="{% static 'js/tweenanime.js' %}"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init({
+         duration: 1200,
+         })
+  </script>
 {% endblock js %}

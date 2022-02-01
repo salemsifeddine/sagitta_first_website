@@ -152,19 +152,19 @@ $(window).on("scroll",function(e){
             var bottom=dataanile[id]["bottom"]
             var rotate="rotate(-" + dataanile[id]["rotate"] + "deg)"
         
-            $(ele).animate({"opacity":1,"bottom":bottom,"left":left},300*id)
+            $(ele).animate({"opacity":1,"bottom":bottom,"left":left},400*id)
             $(ele).css("transform",rotate)
             
         })
-        $(".bottomopcaityeffect").fadeIn(1000)
-        $(".bottomopcaityeffect").css( "left",80 )
-        $(".splashimg").fadeIn(1000)
-    }else
+    //     $(".bottomopcaityeffect").fadeIn(1000)
+    //     $(".bottomopcaityeffect").css( "left",80 )
+    //     $(".splashimg").fadeIn(1000)
+    }
     if($(this).scrollTop() > 3101 || $(this).scrollTop() < 2400){
-        $(".bottomopcaityeffect").css( "left","-" + 180 )
-        $(".bottomopcaityeffect").fadeOut(500);
+        // $(".bottomopcaityeffect").css( "left","-" + 180 )
+        // $(".bottomopcaityeffect").fadeOut(500);
         
-        $(".splashimg").fadeOut(500);
+        // $(".splashimg").fadeOut(500);
         document.querySelectorAll(".imganime").forEach(ele=>{
            
 

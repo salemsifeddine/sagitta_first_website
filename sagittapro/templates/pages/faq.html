@@ -3,7 +3,8 @@
 
 
 {% block head %}
-
+  
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
   <link rel="stylesheet" href="{% static 'css/faq.css' %}">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -123,6 +124,7 @@ body{
 
 
   </style>
+  
 {% endblock head %}
 
 
@@ -211,9 +213,10 @@ body{
 		</button>
 	</div>
 	{% endfor %} -->
+  
 	<div class="inline">
-		<div class="card">
-			<div class="card__content">
+		<div class="card" data-aos="fade-right">
+			<div class="card__content" >
 			  
 			  <div class="card__front">
 				<h3 class="card__title">Beliedelice</h3>
@@ -259,7 +262,7 @@ body{
 			</div>
 		  </div>
 	
-		  <div class="card">
+		  <div class="card" data-aos="fade-left">
 			<div class="card__content">
 			  
 			  <div class="card__front">
@@ -278,7 +281,7 @@ body{
 	</div>
   	<!-- inline 3 -->
     <div class="inline">
-      <div class="card">
+      <div class="card" data-aos="fade-right">
         <div class="card__content">
           
           <div class="card__front">
@@ -323,7 +326,7 @@ body{
 			</div>
 		  </div>
 	
-		  <div class="card">
+		  <div class="card" data-aos="fade-left">
 			<div class="card__content">
 			  
 			  <div class="card__front">
@@ -418,4 +421,10 @@ close_btn.addEventListener('click', () => {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="{% static 'js/tweenanime.js' %}"></script>
 <script src="{% static 'js/faq.js' %}"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+     AOS.init({
+         duration: 1200,
+         })
+  </script>
 {% endblock js %}
