@@ -449,3 +449,7 @@ figure {
     height: 32px;
     fill: #1da1f2;
   }
+
+  .newsletter-form{
+    width: 90%;
+  }

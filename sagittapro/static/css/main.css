@@ -913,7 +913,9 @@ position: relative;
   height:100%;
 }
 
-
+button{
+  outline: none;
+}
 .bottomopcaityeffect{
   position: absolute;
   bottom: 35px;
@@ -1048,7 +1050,8 @@ position: relative;
     left: 33% !important;
     width:240px;
     height:240px;
-    bottom: 80px !important;
+    /* bottom: 80px !important; */
+    bottom: 140px !important;
   }
   .circleanimechild{
     
