@@ -334,11 +334,7 @@ table{
   .grid-text.grid-padding-for-text-2lines {
     height: 96px !important;
   }
-  .grid-item--blue{
-    left: 0 !important;
-    top: 192px !important;
-    
-  }
+  
   .yellowprod{
     left:0% !important
   }
@@ -374,7 +370,7 @@ table{
   } 
   /* overlay */
   .overlay{
-      padding: 15px !important;
+      padding: 0px !important;
   }
   .product-image{
     margin-top: 40px !important;
@@ -397,7 +393,24 @@ table{
       width: 100%;
   }
   table{
-      font-size:12px
+      font-size:12px !important;
+  }
+  .hero-text{
+    padding-bottom: 20px !important;
+  }
+  #products{
+      margin-bottom:20px
+  }
+  .grid-text--product{
+      margin-top: 10px;
+  }
+  .product-description--block-content--table h2{
+      font-size:15px
+  }
+  .col-lg-6.product-content{
+      padding-right: 0;
+      padding-left: 5px !important
   }
 }
+
 
