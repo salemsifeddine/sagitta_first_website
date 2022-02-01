@@ -55,7 +55,7 @@ var csrftoken = getToken('csrftoken')
    <main>
     <header class="hdr" >
         <nav class="navbar" >
-          <a class="brand" href="#">Beliedelice <img src="{% static 'images/logobely1.png' %}" alt=""></a>
+          <a class="brand" href="{% url 'main' %}">Beliedelice <img src="{% static 'images/logobely1.png' %}" alt=""></a>
           <input type="checkbox" id="nav" class="hidden">
           <label for="nav" class="nav-toggle">
               <span></span>
