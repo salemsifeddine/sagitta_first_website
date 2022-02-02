@@ -618,3 +618,8 @@ a:focus {
 	border-bottom: 2px solid white !important;
   color:#000 !important
 }
+
+
+body{
+	overflow-x: hidden !important;
+}
