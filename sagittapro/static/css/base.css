@@ -613,3 +613,8 @@ a:focus {
 	}
 	
 }
+
+.activenav{
+	border-bottom: 2px solid white !important;
+  color:#000 !important
+}

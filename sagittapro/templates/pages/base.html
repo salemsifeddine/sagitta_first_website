@@ -64,10 +64,10 @@ var csrftoken = getToken('csrftoken')
            </label>
           <div class="wrapper1" style="padding: 0;  ">
             <ul class="  menu ">
-                     <li><a class=" js-event-cta" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
-                     <li><a class="  js-event-cta" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
-                     <li><a class="  js-event-cta" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contact</a></li>
-                     <li><a class="  js-event-cta" href="/about" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="recipes">A propos</a></li>
+                     <li><a class=" js-event-cta mainanchor" href="/" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="home">Accueil</a></li>
+                     <li><a class="  js-event-cta produitsanchor" href="/produits" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Produits</a></li>
+                     <li><a class="  js-event-cta contactanchor" href="/contact" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="products">Contact</a></li>
+                     <li><a class="  js-event-cta aboutanchor" href="/about"      >A propos</a></li>
                      <li><a class="  js-event-cta faqanchor" href="/faq" data-event="info-click" data-category="Informational  Action" data-action="Header Navigation" data-label="nice to know">FAQ</a></li>
             </ul>
           </div>
@@ -446,9 +446,9 @@ var csrftoken = getToken('csrftoken')
         var targetclass= "." + pathnm.replaceAll("/","") + "anchor"
 
         if(document.querySelector(targetclass)){
-            document.querySelector(targetclass).classList.add("active")
+            document.querySelector(targetclass).classList.add("activenav")
         }else{
-            document.querySelector(".mainanchor").classList.add("active")
+            document.querySelector(".mainanchor").classList.add("activenav")
         }
         // document.querySelector(targetclass).classList.add("active")
         // console.log(document.querySelector(targetclass),"." + pathnm.replaceAll("/","") + "anchor")

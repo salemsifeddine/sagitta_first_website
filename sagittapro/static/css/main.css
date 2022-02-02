@@ -1153,3 +1153,8 @@ position: relative;
 a{
   text-decoration: none !important
 }
+
+.activenav{
+	border-bottom: 2px solid white !important;
+  color:#000 !important
+}
