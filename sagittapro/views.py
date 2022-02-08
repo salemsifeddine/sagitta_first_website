@@ -18,7 +18,7 @@ def main(request):
 
 
 def products(request):
-    context={"title":"Produits"}
+    context={"title":"Produits","products":Product.objects.all(),"categories":Category.objects.all()}
     return render(request,"pages/products.html",context)
 
 

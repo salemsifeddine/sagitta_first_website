@@ -1,27 +1,30 @@
-from django.db import models
-from django.contrib.auth.models import User
-from django.db.models.base import Model
+ 
+from django.db import models 
+
 
 # Create your models here.
 
-class Product(models.Model):
-    
+class Width(models.Model):
+    width = models.CharField(max_length=5)
+    def __str__(self):
+        return f"{self.width}"
 
+ 
+    
+    
+class Category(models.Model):
+    category=models.CharField(max_length=50)
+    def __str__(self):
+        return self.category 
+
+class Product(models.Model):
     name=models.CharField(max_length=50)
-    description=models.TextField()
-    old_price=models.FloatField()
-    new_price= models.FloatField()
+    price= models.FloatField()
     image= models.ImageField( default="", upload_to="products")
-    brand_name=models.CharField(max_length=100)
-    sku = models.CharField(max_length=50) 
-    meta_keywords = models.CharField(max_length=255, help_text='comma-delimited set of SEO keywords for meta tag')
-    meta_description = models.CharField(max_length=255, help_text='content for description meta tag')
-    is_active = models.BooleanField(default=True)
-    is_bestseller = models.BooleanField(default=False)
-    is_featured = models.BooleanField(default=False)
-    is_promotion=models.BooleanField(default=False)
-    wished=models.BooleanField(default=False)
+    category=models.ForeignKey(Category,on_delete=models.CASCADE)
+    width=models.ForeignKey(Width,on_delete=models.CASCADE)
     date_added=models.DateTimeField(auto_now_add=True)
+    
     def __str__(self):
         return self.name
 
