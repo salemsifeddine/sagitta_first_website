@@ -205,6 +205,10 @@
 	box-shadow: 0 9px 12px -9px #FF6A00;
 }
 
+.card{
+	user-select: none;
+}
+
 .floating-btn {
 	border-radius: 26.5px;
 	background-color: #001F61;
