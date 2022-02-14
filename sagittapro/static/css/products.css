@@ -310,6 +310,9 @@ table{
 
 
 @media screen and (max-width:800px){
+    .bottle-img1{
+        max-width: 50% !important;
+    }
     .main-title{
         font-size: 30px;
     }
