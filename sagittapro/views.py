@@ -1,3 +1,5 @@
+from math import prod
+from unicodedata import category
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
@@ -12,13 +14,34 @@ def newsletterem(request):
         except :
             pass
 def main(request):
-    context={"title":"Acceuil"}
+    
+    context={"title":"Acceuil","products":allproducts}
     newsletterem(request)
     return render(request,"pages/main.html",context)
 
 
 def products(request):
-    context={"title":"Produits","products":Product.objects.all(),"categories":Category.objects.all()}
+    allproducts=[]
+    
+    for catgry in Category.objects.all():
+        myarr=[]
+      
+        for product in Product.objects.filter(category=catgry):
+
+            obj={
+                'product':product.name,
+                "image":product.image.url,
+                "price":product.price,
+                "width":product.width.width,
+            }
+            myarr.append(obj)
+    
+        allproducts.append(myarr)
+    
+    print(len(allproducts))
+
+    context={"title":"Produits","products":Product.objects.all(),"categories":Category.objects.all(),
+    "productsfil":allproducts}
     return render(request,"pages/products.html",context)
 
 

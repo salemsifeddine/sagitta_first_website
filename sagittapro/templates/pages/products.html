@@ -435,7 +435,7 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
         <div class="grid-gutter"></div>
         
 		
-      <div class="grid-item grid-text grid-text--product grid-item--purple" 
+      {% comment %} <div class="grid-item grid-text grid-text--product grid-item--purple" 
       style="position: absolute; left: 0%; top: 0px;">
         <div class="grid-order">25</div>
         <span>Sandwich</span>
@@ -448,8 +448,12 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
          alt="Bâtonnet Belidelice à emporter" width="200px" height="200px">
          <div class="product-name">Beliedelice Sandwich</div>
         </div>
-      </div>
-   
+      </div> {% endcomment %}
+   {% for prdct in productsfil %}
+      <span>
+        sssd
+      </span>
+   {% endfor %}
   </div>
 </div>
 <div class="overlay" id="overlay" style="width: 100%;z-index: 999999999999999;padding: 50px;
