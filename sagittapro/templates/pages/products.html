@@ -434,8 +434,7 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
                  <div class="grid-sizer"></div>
         <div class="grid-gutter"></div>
         
-		
-      {% comment %} <div class="grid-item grid-text grid-text--product grid-item--purple" 
+ <div class="grid-item grid-text grid-text--product grid-item--purple" 
       style="position: absolute; left: 0%; top: 0px;">
         <div class="grid-order">25</div>
         <span>Sandwich</span>
@@ -448,12 +447,26 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
          alt="Bâtonnet Belidelice à emporter" width="200px" height="200px">
          <div class="product-name">Beliedelice Sandwich</div>
         </div>
-      </div> {% endcomment %}
-   {% for prdct in productsfil %}
-      <span>
-        sssd
-      </span>
-   {% endfor %}
+      </div> 
+   
+   {% comment %} {% for mydata in productsfil %}
+      <div class="grid-item grid-text grid-text--product grid-item--purple" 
+          style="position: absolute; left: 0%; top: 0px;">
+            <div class="grid-order">25</div>
+            <span>{{mydata.category}}</span>
+          </div>
+          {% for product in mydata.productscat %}
+            <div class="grid-item with-click grid-item--product-purple grid-sizer-width-2" 
+            style="position: absolute; left: 25.1647%; top: 0px; width: {{product.width}}% !important" >
+            <div class="grid-order">26</div>
+            <div class="grid-item--product grid-item--product-flex grid-item--big-product">
+              <img class="responsive" src="/static{{product.image}}"
+              alt="Bâtonnet Belidelice à emporter" width="200px" height="200px">
+              <div class="product-name">{{product.product}}</div>
+              </div>
+          </div>
+        {% endfor %}
+   {% endfor %} {% endcomment %}
   </div>
 </div>
 <div class="overlay" id="overlay" style="width: 100%;z-index: 999999999999999;padding: 50px;

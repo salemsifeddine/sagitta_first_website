@@ -15,7 +15,7 @@ def newsletterem(request):
             pass
 def main(request):
     
-    context={"title":"Acceuil","products":allproducts}
+    context={"title":"Acceuil"}
     newsletterem(request)
     return render(request,"pages/main.html",context)
 
@@ -35,10 +35,14 @@ def products(request):
                 "width":product.width.width,
             }
             myarr.append(obj)
+
+            myobj={
+                "category":catgry.category,
+                "productscat":myarr
+            }
+        allproducts.append(myobj)
+    print(allproducts[0]["productscat"])
     
-        allproducts.append(myarr)
-    
-    print(len(allproducts))
 
     context={"title":"Produits","products":Product.objects.all(),"categories":Category.objects.all(),
     "productsfil":allproducts}
