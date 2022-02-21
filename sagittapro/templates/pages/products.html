@@ -146,7 +146,9 @@
               <div class="center">
                   <div class="right-side__img">
                       <img class="bottle-bg" src="https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=3260&amp;q=80" alt="">
-                      <img class="bottle-img bottle-img1" src="{% static 'images/product5.webp' %}">
+                      {% comment %} <img class="bottle-img bottle-img1" src="{% static 'images/product5.webp' %}"> {% endcomment %}
+                      {% comment %} molto {% endcomment %}
+                      <img class="bottle-img bottle-img1" src="{% static 'images/molto2.webp' %}">
                   </div>
               </div>
           </div>
@@ -391,39 +393,64 @@ data-color="blueNavy" data-product="Belidelice-original-lunchbox-220g" data-orie
         <div class="grid-gutter"></div>
         
 		
-      <div class="grid-item grid-text grid-text--product grid-item--blueNavy" 
-      style="position: absolute; left: 0%; top: 0px;">
-        <div class="grid-order">17</div>
-        <span>Beliedelice chocolat</span>
+      <div class="grid grid-enrobed" style="position: relative; min-height: 305px;">
+        <div class="grid-item grid-text grid-text--product grid-item--blueNavy" 
+        style="position: absolute; left: 0%; top: 0px;">
+          <div class="grid-order">17</div>
+          <span>Beliedelice chocolat</span>
+        </div>
+        <div class="grid-item with-click grid-item--product-blueNavy" 
+        style="position: absolute; left: 25.1647%; top: 0px;width:49.5% !important">
+        <div class="grid-order">18</div>
+        <div class="grid-item--product grid-item--product-flex grid-item--small-product" 
+        data-color="blueNavy" 
+        data-product="milka-mini-Belidelice-92g" data-orientation="landscape">
+          <img style="height: 120px;" class="responsive" src="{% static 'images/product3.webp' %}" alt="Milka Mini-Belidelice 92g" width="200px" height="200px">
+          <div class="product-name">Biscuit double Chockolat fouurré à la créme de cacao</div>
+        </div>
       </div>
+      {% comment %}  {% endcomment %}
       <div class="grid-item with-click grid-item--product-blueNavy" 
-      style="position: absolute; left: 25.1647%; top: 0px;">
-      <div class="grid-order">18</div>
-      <div class="grid-item--product grid-item--product-flex grid-item--small-product" 
-      data-color="blueNavy" 
-      data-product="milka-mini-Belidelice-92g" data-orientation="landscape">
-        <img style="height: 120px;" class="responsive" src="{% static 'images/product3.webp' %}" alt="Milka Mini-Belidelice 92g" width="200px" height="200px">
-        <div class="product-name">Biscuit double Chockolat fouurré à la créme de cacao</div>
+        style="position: absolute; left: 25.1647%; top: 0px; ">
+        <div class="grid-order">18</div>
+        <div class="grid-item--product grid-item--product-flex grid-item--small-product" 
+        data-color="blueNavy" 
+        data-product="milka-mini-Belidelice-92g" data-orientation="landscape">
+          <img style="height: 150px;width:130px" class="responsive" src="{% static 'images/molto2.webp' %}" alt="Milka Mini-Belidelice 92g" width="200px" height="200px">
+          <div class="product-name">Molto</div>
+        </div>
       </div>
-    </div>
-    
-        
+          
+      </div>
     
 <div class="grid grid-flavours" style="position: relative; min-height: 305px;">
                  <div class="grid-sizer"></div>
         <div class="grid-gutter"></div>
         
 		
-      <div class="grid-item grid-text grid-text--product grid-item--yellow" style="position: absolute; left: 0%; top: 0px;"><div class="grid-order">21</div><span>Flavors<sup>3</sup></span></div><div data-product-ajax="/produits/Belidelice-saveur-choco-brownie-154g?p=29527&amp;provider={d193998a-4a6d-4ea5-baa8-209357b27a09}" class="grid-item with-click grid-item--product-yellow" style="position: absolute; left: 25.1647%; top: 0px;"><div class="grid-order">22</div><div class="grid-item--product grid-item--product-flex grid-item--small-product" data-color="yellow" data-product="Belidelice-saveur-choco-brownie-154g" data-orientation="landscape">
-        <img class="responsive" src="{% static 'images/beli.webp' %}" 
-        alt="Belidelice Saveur Choco Brownie 154g" width="200px" height="200px"><div class="product-name">Biscuit double Chockolat fouurré à la créme de cacao</div></div></div><div data-product-ajax="/produits/Belidelice-saveur-peanut-butter-154g?p=29528&amp;provider={d193998a-4a6d-4ea5-baa8-209357b27a09}" class="grid-item with-click grid-item--product-yellow" style="position: absolute; left: 50.4193%; top: 0px;"><div class="grid-order">23</div><div class="grid-item--product grid-item--product-flex grid-item--small-product" data-color="yellow" data-product="Belidelice-saveur-peanut-butter-154g" data-orientation="landscape">
+      <div class="grid-item grid-text grid-text--product grid-item--yellow" 
+      style="position: absolute; left: 0%; top: 0px;">
+      <div class="grid-order">21</div>
+      <span>Flavors<sup>3</sup></span>
+    </div>
+    <div class="grid-item with-click grid-item--product-yellow" 
+    style="position: absolute; left: 25.1647%; top: 0px;">
+    <div class="grid-order">22</div>
+    
+    </div>
+    <div  class="grid-item with-click grid-item--product-yellow" 
+    style="position: absolute; left: 50.4193%; top: 0px;">
+    <div class="grid-order">23</div>
+    <div class="grid-item--product grid-item--product-flex grid-item--small-product" 
+    data-color="yellow" data-product="Belidelice-saveur-peanut-butter-154g"
+     data-orientation="landscape">
         <img class="responsive" src="{% static 'images/product6.webp' %}" 
         alt="Mini hiba Sables" width="200px" height="80px">
         <div class="product-name">Mini hiba Sables</div>
       </div>
     </div
     ><div  class="grid-item with-click grid-item--product-yellow"
-    style="position: absolute; left: 75.6738%; top: 0px;">
+    style="position: absolute; left: 75.6738%; top: 0px; width:49.5% !important">
     <div class="grid-order">24</div>
     <div class="grid-item--product grid-item--product-flex grid-item--small-product" >
           <img class="responsive" src="{% static 'images/cookies.webp' %}" 
