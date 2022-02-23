@@ -85,7 +85,7 @@ table{
     font-size: 25px;
 }
 .products .grid-item--big-product img {
-    max-width: 250px !important;
+    max-width: 140px !important;
     margin: auto;
 }
 .products .product-name {
@@ -140,6 +140,9 @@ table{
 }
 .products .grid-item--product-blue.active:hover, .products .grid-item--product-blue:hover {
     background-color: #126cbb;
+}
+.products .grid-item--product-yellow:hover, .products .grid-item--product-yellow:hover {
+    background-color: #f1ca8b;
 }
 .products .grid-item--product-pink.active:hover, .products .grid-item--product-pink:hover {
     background-color: #e9759e;
