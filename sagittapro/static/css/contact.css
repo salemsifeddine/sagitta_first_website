@@ -88,7 +88,7 @@ wysiwyg ol li, .wysiwyg ul li {
 
 .contact-left-side, .contact-right-side{
     width: 50%;
-   
+   overflow: hidden;
     padding: 10px;
 }
 
@@ -115,11 +115,12 @@ textarea{
     }
     .custom-field.one input {
         min-width: 230px !important;
-        width:230px
+        width:125% !important
+        /* width: 100% !important; */
     }
     textarea{
-        min-width: 229.9px !important;
-        max-width: 230px !important;
+        min-width: 99.9% !important;
+        max-width: 100% !important;
         max-height: 45px !important;
         min-height: 44.9px !important;
         border: 1.5px solid #ddd;
@@ -129,6 +130,7 @@ textarea{
       }
     .contact-left-side, .contact-right-side{
         width:100% !important;
+        
     }
 
 }
