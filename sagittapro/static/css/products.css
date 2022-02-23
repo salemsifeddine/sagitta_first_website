@@ -314,6 +314,12 @@ table{
 
 
 @media screen and (max-width:800px){
+    .hero-text{
+        width: 100%;
+    }
+    .hero-text h1{
+        text-align: center
+    }
     .bottle-img1{
         max-width: 50% !important;
     }
