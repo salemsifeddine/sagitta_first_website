@@ -10,12 +10,13 @@
 font-size: 3em;
 font-weight: bold;
 font-family: 'Lobster', 'Roboto', serif;
+color: white;
 }
 
 #about-page .row {
 font-size: 1.1em;
 /* margin-top: 7%; */
-padding-top: 7%;
+padding-top: 1%;
 }
 
 
@@ -32,9 +33,30 @@ width: 100%;
 padding-top: 20px;
 }
 
+#instagram-embed-0,#instagram-embed-1{
+     width:80% !important;
+        margin:auto !important;
+      
+}
+
+#instagram-embed-1{
+    height:75vh !important;
+}
+ 
+
 /*  */
 
 @media screen and (max-width:800px){
+    #instagram-embed-0{
+        width:80% !important;
+        margin:auto !important;
+        height:83vh !important
+    }
+    #instagram-embed-1{
+        width:80% !important;
+        margin:auto !important;
+        height:57vh !important
+    }
     #citation p{
 		font-size:45px
 	}
