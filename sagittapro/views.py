@@ -41,7 +41,7 @@ def products(request):
                 "productscat":myarr
             }
         allproducts.append(myobj)
-    print(allproducts[0]["productscat"])
+    
     
 
     context={"title":"Produits","products":Product.objects.all(),"categories":Category.objects.all(),
