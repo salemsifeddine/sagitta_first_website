@@ -3,6 +3,27 @@ $(window).on("scroll",function(e){
     var valueS = $(this).scrollTop() 
     
 
+    if(valueS == 0){
+        document.querySelectorAll(".gtt").forEach((ele,id)=>{
+             
+            
+            
+            ele.style.top = "+"+130+ "px"
+        })
+    }else{
+        
+        document.querySelectorAll(".gtt").forEach((ele,id)=>{
+            ele.style.zIndex ="2";
+            idd=id+1;
+            element=document.querySelector('.gtt[data-id="'+idd+'"]')
+            
+            
+            element.style.top = "-"+(valueS)/(10*idd)+ "px"
+        })
+        // [Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
+
+        
+    }
     
     length=document.querySelectorAll(".gtt").length
     // switch (Math.ceil(valueS/360)) {
@@ -100,24 +121,9 @@ $(window).on("scroll",function(e){
         if( valueS/5 >=42 && window.outerWidth < 800){
             document.querySelector(".top").style.left ="-" + valueS/15
         }
-        
+      
        
        
-    }else{
-        document.querySelectorAll(".gtt").forEach((ele,id)=>{
-            ele.style.zIndex ="2"
-            
-        })
-        document.querySelectorAll(".gtt").forEach((ele,id)=>{
-            idd=id+1
-            element=document.querySelector('.gtt[data-id="'+idd+'"]')
-            
-            
-            element.style.top = "-"+(valueS)/(10*id)+ "px"
-        })
-        // [Math.floor(Math.random()*length)].style.top = "-"+(valueS)/30+ "px"
-
-        
     }
     // 
         var dataanile=[{
@@ -160,25 +166,25 @@ $(window).on("scroll",function(e){
     //     $(".bottomopcaityeffect").css( "left",80 )
     //     $(".splashimg").fadeIn(1000)
     }
-    if($(this).scrollTop() > 3101 || $(this).scrollTop() < 2400){
-        // $(".bottomopcaityeffect").css( "left","-" + 180 )
-        // $(".bottomopcaityeffect").fadeOut(500);
+    // if($(this).scrollTop() > 3101 || $(this).scrollTop() < 2400){
+    //     // $(".bottomopcaityeffect").css( "left","-" + 180 )
+    //     // $(".bottomopcaityeffect").fadeOut(500);
         
-        // $(".splashimg").fadeOut(500);
-        document.querySelectorAll(".imganime").forEach(ele=>{
+    //     // $(".splashimg").fadeOut(500);
+    //     document.querySelectorAll(".imganime").forEach(ele=>{
            
 
-            ele.style.bottom=0;
-            ele.style.left=0;
-            ele.style.opacity=0;
+    //         ele.style.bottom=0;
+    //         ele.style.left=0;
+    //         ele.style.opacity=0;
         
             
             
-        })
+    //     })
 
 
         
-    }
+    // }
     
    
     
