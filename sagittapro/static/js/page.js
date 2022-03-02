@@ -113,18 +113,18 @@ $(window).on("scroll",function(e){
     
     
 
-    if( valueS/20 <= 31.2){
-        document.querySelector(".top").style.transform ="rotate(-"+ valueS/20 + "deg)"
-        if( valueS/5 >=42 && window.outerWidth > 800){
-            document.querySelector(".top").style.left ="-" + valueS/5
-        } 
-        if( valueS/5 >=42 && window.outerWidth < 800){
-            document.querySelector(".top").style.left ="-" + valueS/15
-        }
+    // if( valueS/20 <= 31.2){
+    //     document.querySelector(".top").style.transform ="rotate(-"+ valueS/20 + "deg)"
+    //     if( valueS/5 >=42 && window.outerWidth > 800){
+    //         document.querySelector(".top").style.left ="-" + valueS/5
+    //     } 
+    //     if( valueS/5 >=42 && window.outerWidth < 800){
+    //         document.querySelector(".top").style.left ="-" + valueS/15
+    //     }
       
        
        
-    }
+    // }
     // 
         var dataanile=[{
             "left":7,

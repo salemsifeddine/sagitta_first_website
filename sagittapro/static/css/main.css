@@ -818,8 +818,8 @@ margin: auto;
 position: sticky;
 bottom: 114px;
 left: 40%; */
-height: 250px;
-width: 275px;
+height: 350px;
+width: 350px;
 margin: auto;
 position: fixed;
 /* bottom: 94px; */
@@ -836,12 +836,18 @@ z-index: 2;
 
 } */
 .top{
-  width: 72%;
+  /* width: 72%;
 position: absolute;
 left: -42px;
 top: 34px;
 z-index: 2;
-height: 146px;
+height: 146px; */
+width: 61%;
+position: absolute;
+left: 10px;
+top: 26px;
+z-index: 2;
+height: 74px;
 }
 .btm{
   width: 100%;
@@ -1028,8 +1034,8 @@ position: relative;
 /* grid */
 @media screen and (max-width:800px) {
   .cont{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     top: 285px;
   }
   .gtt{
@@ -1037,10 +1043,9 @@ position: relative;
     height:30px;
   }
   .top{
-    left: -15px;
-    top: 38px;
-  
-  height: 55px;
+    left: 6px;
+    top: 31px;
+    height: 44px;
   }
   .circleanime{
     position: absolute;
