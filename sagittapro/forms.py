@@ -12,12 +12,12 @@ from .models import *
 username_validator = UnicodeUsernameValidator()
 
 class ContactUsForm(forms.ModelForm):
-      first_name = forms.CharField(max_length=63,widget=forms.TextInput(attrs={'id': 'usernameUser','placeholder': ' ',"name":"username"}))
-      last_name = forms.CharField(max_length=63,widget=forms.TextInput(attrs={'id': 'usernameUser','placeholder': ' ',"name":"username"}))
+      first_name = forms.CharField(max_length=63,widget=forms.TextInput(attrs={'id': 'usernameUser','placeholder': 'Nom',"name":"username"}))
+      last_name = forms.CharField(max_length=63,widget=forms.TextInput(attrs={'id': 'usernameUser','placeholder': 'Prénom',"name":"username"}))
       email = forms.CharField(
-       widget=forms.EmailInput(attrs={'placeholder': ' ',"name":"email","id":"EmailUser"})
+       widget=forms.EmailInput(attrs={'placeholder': 'E-mail',"name":"email","id":"EmailUser"})
       )
-      subject =forms.CharField(widget=forms.Textarea(attrs={"cols":"0","rows":"0","style":"padding: 5px; max-width:521px;max-height: 70px","name":"email","id":"textareainput"}))
+      subject =forms.CharField(widget=forms.Textarea(attrs={"cols":"0","rows":"0","style":"padding: 5px; max-width:521px;max-height: 70px","name":"email","id":"textareainput","placeholder":"Subject"}))
       class Meta:
          model=ContactUs
          fields = ["first_name","last_name","email","subject"]
