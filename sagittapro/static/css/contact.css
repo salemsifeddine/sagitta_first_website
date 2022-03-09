@@ -207,9 +207,11 @@ button, select {
   }
   
   h1 {
-    color: #474544;
-    font-size: 32px;
-    font-weight: 700;
+    color: #004851;
+    font-size: 3.7rem;
+    font-weight: 600;
+    /* font-size: 32px;
+    font-weight: 700; */
     letter-spacing: 7px;
     text-align: center;
     text-transform: uppercase;
@@ -228,7 +230,7 @@ button, select {
   
   .icon {
     display: block;
-    fill: #474544;
+    fill: #8f68fb;
     height: 50px;
     margin: 0 auto;
     width: 50px;
@@ -242,7 +244,7 @@ button, select {
   input[type='text'], [type='email'], select, textarea {
     background: none;
     border: none;
-    border-bottom: solid 2px #474544;
+    border-bottom: solid 2px #8f68fb;
     color: #474544;
     font-size: 1.000em;
     font-weight: 400;
