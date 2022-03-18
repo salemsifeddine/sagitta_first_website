@@ -15,6 +15,7 @@ body{
 }
 table{
     color: #000;
+    font-size: 9px !important;
 }
 .products .grid-sizer {
     width: 24.25%;
@@ -444,6 +445,9 @@ table{
 }
 @media (min-width: 1200px){
     .product-image {
-        width: 30% !important;
+        width: 40% !important;
+    }
+    .product-content {
+        width: 60% !important;
     }
 }
