@@ -71,7 +71,8 @@ productsClickable.forEach(ele=>{
         document.querySelector(".image1").src = srcimgtarget
         document.querySelector(".image2").src = srcimgtarget
         document.querySelector(".product-title").textContent = productName;
-        $("body").animate({"scrollTop":0},800) 
+        var offsettop1=document.querySelector(".overlay").offsetTop
+        $("body").animate({"scrollTop":offsettop1},800) 
     })
 })
 

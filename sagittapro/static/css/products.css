@@ -435,6 +435,15 @@ table{
     width: 100%;
     height: 100%;
 }
-.grid-item.with-click{
+/* .grid-item.with-click{
     max-height: 305px !important;
+} */
+
+.with-click{
+    cursor: pointer !important;
+}
+@media (min-width: 1200px){
+    .product-image {
+        width: 30% !important;
+    }
 }
