@@ -385,12 +385,18 @@ table{
   /* overlay */
   .overlay{
       padding: 0px !important;
+      margin: 0 !important;
+      width: 100% !important;
   }
   .product-image{
     margin-top: 40px !important;
     margin-bottom: 20px !important;
-    height: 40vh;
-    margin:auto
+   
+    margin:auto;
+    
+  }
+  .contimgs{
+    display:inline-block
   }
   .product-description--block-image,.product-description--block-image-2{
     width: 150px !important;
